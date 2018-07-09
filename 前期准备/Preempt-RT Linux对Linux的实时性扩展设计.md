@@ -120,12 +120,6 @@ jiffies是Linux中记录从电脑开机到现在总共的时钟中断次数的�
 
 当realtime preemption启用后，`itimer`和`posix interval timers`的信号发送不能在硬中断的高分辨率时钟中断的context中完成。因为锁的限制，信号的发送必须在线程的context中。为了避免延迟过长，软中断线程已经被分割成几个preemption patch。这些分割可以显著提高系统的实时性，但是仍有一个问题没有解决。`hrtimers`软中断线程可以被高优先级的线程延迟任意长的时间。一个可能的解决方案是提高`hrtimer`软中断线程的优先级，但是这样的话，所有与signal相关的timer都会以高优先级发送消息，从而引起原本的高优先级任务的延迟。之前某个版本的realtime preemption patch已经为这个问题提供了一个解决方案：根据接收消息的任务的优先级，来动态调整软中断的优先级。
 
-When realtime preemption is enabled, the delivery of signals at the expiry of itimer and posix interval timers can not be done in the hard interrupt context of the high resolution timer interrupt. The signal delivery must happen in thread context due to locking constraints. To avoid long latencies the softirq threads have been separated in the realtime preemption patch a while ago. While this separation enhanced the behavior significantly, there was still a problem remaining. The hrtimers softirq thread can be arbitrarily long delayed by higher priority tasks. A possible solution is to up the priority of the hrtimer softirq thread, but this has the effect that all timer related signals are delivered at high priority and therefore introduce latency impacts to high priority tasks. A prior version of the realtime preemption patch contained a solution for this problem already: dynamic adjustment of the softirq priority depending on the priority of the task for which the signal has to be delivered.
-
-This functionality was removed with the rework of the high resolution timer patches and due to a subtle race condition with the Priority Inheritance code. The new design of RT-Mutexes and the core PI support in the scheduler removed this race condition and allowed to re-implement this feature. On a PentiumIII 400 MHz test machine this change reduced the maximum user space latency for a thread waiting on the delivery of a periodic signal significantly from ~400 to ~90 micro seconds under full system load.
-
-Note that (clock_)nanosleep functions do not suffer from this problem as the wakeup function at timer expiry is executed in the context of the high resolution timer interrupt. If an application is not using asynchronous signal handlers, it is recommended to use the clock_nanosleep() function with the TIMER_ABSTIME flag set instead of waiting for the periodic timer signal delivery. The application has to maintain the absolute expiry time for the next interval itself, but this is a lightweight operation of adding and normalizing two struct timespec values. The benefit is significantly lower maximum latencies (~50us) and less OS overhead in general.
-
 #### 2.1.2 High resolution timer design notes
 
 更多信息请参见OLS 2006 talk的paper “hrtimers and beyond”。这篇paper是OLS 2006 Proceedings Volume 1的一部分，可以在[OLS website](https://www.kernel.org/doc/ols/2006/ols2006v1-pages-333-346.pdf)找到（“/Users/lt/Documents/thu_oslab/Preempt_RT/项目网站Doc翻译/补充资料/Hrtimers and Beyond: Transforming the Linux Time Subsystems.pdf”）。
@@ -148,16 +142,9 @@ Note that (clock_)nanosleep functions do not suffer from this problem as the wak
 
 hrtimer的基础设施在linux-2.6.16中合并到kernel中。实现的细节在`Documentation/timers/hrtimers.txt`中。在slides的图#2（OLS slides p. 15）中也能看到。
 
-The main differences to the timer wheel, which holds the armed timer_list type timers are:
-
-1. time ordered enqueueing into a rb-tree
-2. independent of ticks (the processing is based on nanoseconds)
-
 #### 2.1.4 timeofday and clock source management
 
 正如slides的图#3（OLS slides p. 18）所示，John Stultz提出的Generic Time Of Day (GTOD)框架将很多代码从architecture-specific区域移入generic management framework。
-
-John Stultz's Generic Time Of Day (GTOD) framework moves a large portion of code out of the architecture-specific areas into a generic management framework, as illustrated in figure #3 (OLS slides p. 18). The architecture specific portion is reduced to the low level hardware details of the clock sources, which are registered in the framework and selected on a quality based decision. The low level code provides hardware setup and readout routines and initializes data structures, which are used by the generic time keeping code to convert the clock ticks to nanosecond based time values. All other time keeping related functionality is moved into the generic code. The GTOD base patch got merged into the 2.6.18 kernel.
 
 关于Generic Time Of Day框架的更多信息，请参见[OLS 2005 Proceedings Volume 1](https://www.kernel.org/doc/ols/2005/ols2005v1-pages-227-240.pdf)。
 
