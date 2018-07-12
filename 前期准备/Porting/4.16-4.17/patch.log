@@ -1,0 +1,3666 @@
+
+Index Status Patch_name
+
+Index:
+	F, Failed
+	N, File Not Found
+	I, Ignored
+	S, Success
+
+001 S 0001-ARM-at91-add-TCB-registers-definitions.patch
+
+	patching file include/soc/at91/atmel_tcb.h
+
+002 S 0001-bdi-use-refcount_t-for-reference-counting-instead-at.patch
+
+	patching file include/linux/backing-dev-defs.h
+	patching file include/linux/backing-dev.h
+	Hunk #1 succeeded at 404 (offset 1 line).
+	patching file mm/backing-dev.c
+	Hunk #1 succeeded at 450 (offset -11 lines).
+	Hunk #2 succeeded at 463 (offset -11 lines).
+	Hunk #3 succeeded at 486 (offset -11 lines).
+	Hunk #4 succeeded at 794 (offset -13 lines).
+
+003 F 0001-get-rid-of-trylock-loop-in-locking-dentries-on-shrin.patch
+
+	patching file fs/dcache.c
+	Hunk #1 FAILED at 974.
+	1 out of 1 hunk FAILED -- saving rejects to file fs/dcache.c.rej
+
+004 I 0001-iommu-amd-Use-raw-locks-on-atomic-context-paths.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	12 out of 12 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+	patching file drivers/iommu/amd_iommu_init.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file drivers/iommu/amd_iommu_init.c.rej
+	patching file drivers/iommu/amd_iommu_types.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu_types.h.rej
+
+005 S 0001-PM-suspend-Prevent-might-sleep-splats.patch
+
+	patching file include/linux/kernel.h
+	Hunk #1 succeeded at 542 with fuzz 1 (offset 10 lines).
+	patching file kernel/power/hibernate.c
+	patching file kernel/power/suspend.c
+	patching file kernel/time/tick-common.c
+
+006 S 0001-spinlock-atomic_dec_and_lock-Add-an-irqsave-variant.patch
+
+	patching file include/linux/spinlock.h
+	patching file lib/dec_and_lock.c
+
+007 I 0001-tracing-Add-field-modifier-parsing-hist-error-for-hi.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+008 F 0002-clocksource-drivers-Add-a-new-driver-for-the-Atmel-A.patch
+
+	patching file drivers/clocksource/Kconfig
+	Hunk #1 FAILED at 392.
+	1 out of 1 hunk FAILED -- saving rejects to file drivers/clocksource/Kconfig.rej
+	patching file drivers/clocksource/Makefile
+	patching file drivers/clocksource/timer-atmel-tcb.c
+
+009 S 0002-drivers-md-raid5-Use-irqsave-variant-of-atomic_dec_a.patch
+
+	patching file drivers/md/raid5.c
+
+010 I 0002-iommu-amd-Don-t-use-dev_data-in-irte_ga_set_affinity.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+011 I 0002-iommu-amd-Turn-dev_data_list-into-a-lock-less-list.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+	patching file drivers/iommu/amd_iommu_types.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file drivers/iommu/amd_iommu_types.h.rej
+
+012 I 0002-now-lock_parent-can-t-run-into-killed-dentry.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+013 S 0002-PM-wakeup-Make-events_lock-a-RAW_SPINLOCK.patch
+
+	patching file drivers/base/power/wakeup.c
+
+014 I 0002-tracing-Add-field-parsing-hist-error-for-hist-trigge.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+015 S 0002-userns-use-refcount_t-for-reference-counting-instead.patch
+
+	patching file include/linux/sched/user.h
+	patching file kernel/user.c
+
+016 S 0003-clocksource-drivers-atmel-pit-make-option-silent.patch
+
+	patching file drivers/clocksource/Kconfig
+	Hunk #1 succeeded at 392 (offset 11 lines).
+
+017 S 0003-drivers-md-raid5-Do-not-disable-irq-on-release_inact.patch
+
+	patching file drivers/md/raid5.c
+
+018 F 0003-iommu-amd-Avoid-0-get_irq_table-from-atomic-co.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 FAILED at 3595.
+	Hunk #2 FAILED at 3682.
+	Hunk #3 FAILED at 3733.
+	Hunk #4 FAILED at 3766.
+	Hunk #5 FAILED at 3790.
+	Hunk #6 FAILED at 4108.
+	Hunk #7 FAILED at 4391.
+	7 out of 7 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+019 F 0003-iommu-amd-Split-domain-id-out-of-amd_iommu_devtable_.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 FAILED at 81.
+	Hunk #2 FAILED at 1599.
+	2 out of 2 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+020 S 0003-PM-s2idle-Make-s2idle_wait_head-swait-based.patch
+
+	patching file kernel/power/suspend.c
+
+021 I 0003-split-the-slow-part-of-lock_parent-off.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+022 I 0003-tracing-Restore-proper-field-flag-printing-when-disp.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+023 S 0004-ARM-at91-Implement-clocksource-selection.patch
+
+	patching file arch/arm/mach-at91/Kconfig
+
+024 F 0004-dput-consolidate-the-do-we-need-to-retain-it-into-an.patch
+
+	patching file fs/dcache.c
+	Hunk #1 succeeded at 644 with fuzz 1 (offset 18 lines).
+	Hunk #2 FAILED at 822.
+	1 out of 2 hunks FAILED -- saving rejects to file fs/dcache.c.rej
+
+025 F 0004-iommu-amd-Split-irq_lookup_table-out-of-the-amd_iomm.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 83 with fuzz 2 (offset 1 line).
+	Hunk #2 FAILED at 3610.
+	Hunk #3 FAILED at 3675.
+	2 out of 3 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+026 S 0004-locking-refcount-implement-refcount_dec_and_lock_irq.patch
+
+	patching file include/linux/refcount.h
+	patching file lib/refcount.c
+
+027 S 0004-PM-wakeup-Make-s2idle_lock-a-RAW_SPINLOCK.patch
+
+	patching file kernel/power/suspend.c
+
+028 I 0004-tracing-Uninitialized-variable-in-create_tracing_map.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+029 S 0005-ARM-configs-at91-use-new-TCB-timer-driver.patch
+
+	patching file arch/arm/configs/at91_dt_defconfig
+	patching file arch/arm/configs/sama5_defconfig
+
+030 S 0005-bdi-Use-irqsave-variant-of-refcount_dec_and_lock.patch
+
+	patching file mm/backing-dev.c
+	Hunk #1 succeeded at 485 (offset -11 lines).
+
+031 I 0005-handle-move-to-LRU-in-retain_dentry.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+032 I 0005-iommu-amd-Remove-the-special-case-from-alloc_irq_tab.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	5 out of 5 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+033 I 0005-tracing-Fix-a-potential-NULL-dereference.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+034 S 0006-ARM-configs-at91-unselect-PIT.patch
+
+	patching file arch/arm/configs/at91_dt_defconfig
+	patching file arch/arm/configs/sama5_defconfig
+
+035 I 0006-get-rid-of-trylock-loop-around-dentry_kill.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file fs/dcache.c.rej
+
+036 I 0006-iommu-amd-Use-table-instead-irt-as-variable-name-in-.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+037 S 0006-userns-Use-irqsave-variant-of-refcount_dec_and_lock.patch
+
+	patching file kernel/user.c
+
+038 I 0007-fs-dcache-Avoid-a-try_lock-loop-in-shrink_dentry_lis.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	7 out of 7 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+039 I 0007-iommu-amd-Factor-out-setting-the-remap-table-for-a-d.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+040 F 0008-dcache.c-trim-includes.patch
+
+	patching file fs/dcache.c
+	Hunk #1 FAILED at 25.
+	1 out of 1 hunk FAILED -- saving rejects to file fs/dcache.c.rej
+
+041 F 0008-iommu-amd-Drop-the-lock-while-allocating-new-irq-rem.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 3617 (offset 14 lines).
+	Hunk #2 FAILED at 3638.
+	Hunk #3 FAILED at 3656.
+	2 out of 3 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+042 I 0009-iommu-amd-Make-amd_iommu_devtable_lock-a-spin_lock.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	5 out of 5 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+043 I 0009-split-d_path-and-friends-into-a-separate-file.patch
+
+	patching file fs/Makefile
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file fs/Makefile.rej
+	The next patch would create the file fs/d_path.c,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+044 N 0009-tracing-Move-hist-trigger-Documentation-to-histogram.patch
+
+	can't find file to patch at input line 23
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|From: Tom Zanussi <tom.zanussi@linux.intel.com>
+	|Date: Mon, 15 Jan 2018 20:51:35 -0600
+	|Subject: [PATCH 09/48] tracing: Move hist trigger Documentation to
+	| histogram.txt
+	|
+	|The hist trigger Documentation takes up a large part of events.txt -
+	|since it will be getting even larger, move it to a separate file.
+	|
+	|Link: http://lkml.kernel.org/r/92761155ea4f529e590821b1e02207fe8619f248.1516069914.git.tom.zanussi@linux.intel.com
+	|
+	|Signed-off-by: Tom Zanussi <tom.zanussi@linux.intel.com>
+	|Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
+	|(cherry picked from commit 995f87b4d6ddb6bbb40309c08c3ca2a1f9f9db80)
+	|Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+	|---
+	| Documentation/trace/events.txt    | 1548 -------------------------------------
+	| Documentation/trace/histogram.txt | 1568 ++++++++++++++++++++++++++++++++++++++
+	| 2 files changed, 1569 insertions(+), 1547 deletions(-)
+	| create mode 100644 Documentation/trace/histogram.txt
+	|
+	|--- a/Documentation/trace/events.txt
+	|+++ b/Documentation/trace/events.txt
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file Documentation/trace/histogram.txt,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+
+045 I 0010-iommu-amd-Return-proper-error-code-in-irq_remapping_.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+046 I 0010-take-out-orphan-externs-empty_string-slash_string.patch
+
+	patching file include/linux/dcache.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/dcache.h.rej
+
+047 F 0010-tracing-Add-Documentation-for-log2-modifier.patch
+
+	patching file Documentation/trace/histogram.txt
+	Hunk #1 FAILED at 73.
+	1 out of 1 hunk FAILED -- saving rejects to file Documentation/trace/histogram.txt.rej
+
+048 I 0011-fold-lookup_real-into-__lookup_hash.patch
+
+	patching file fs/namei.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file fs/namei.c.rej
+
+049 I 0011-tracing-Add-support-to-detect-and-avoid-duplicates.patch
+
+	patching file kernel/trace/tracing_map.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file kernel/trace/tracing_map.c.rej
+
+050 I 0012-debugfs_lookup-switch-to-lookup_one_len_unlocked.patch
+
+	patching file fs/debugfs/inode.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file fs/debugfs/inode.c.rej
+
+051 F 0012-tracing-Remove-code-which-merges-duplicates.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 FAILED at 340.
+	Hunk #2 FAILED at 360.
+	2 out of 2 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+	patching file kernel/trace/tracing_map.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file kernel/trace/tracing_map.c.rej
+	patching file kernel/trace/tracing_map.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/tracing_map.h.rej
+
+052 I 0013-lustre-get-rid-of-pointless-casts-to-struct-dentry.patch
+
+	patching file drivers/staging/lustre/lustre/llite/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file drivers/staging/lustre/lustre/llite/dcache.c.rej
+
+053 I 0013-ring-buffer-Add-interface-for-setting-absolute-time-.patch
+
+	patching file include/linux/ring_buffer.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/ring_buffer.h.rej
+	patching file kernel/trace/ring_buffer.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/ring_buffer.c.rej
+	patching file kernel/trace/trace.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/trace.c.rej
+	patching file kernel/trace/trace.h
+	Hunk #1 succeeded at 169 with fuzz 2 (offset -104 lines).
+	Hunk #2 succeeded at 195 with fuzz 2 (offset -92 lines).
+
+054 I 0014-oprofilefs-don-t-oops-on-allocation-failure.patch
+
+	patching file drivers/oprofile/oprofilefs.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file drivers/oprofile/oprofilefs.c.rej
+
+055 I 0014-ring-buffer-Redefine-the-unimplemented-RINGBUF_TYPE_.patch
+
+	patching file include/linux/ring_buffer.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file include/linux/ring_buffer.h.rej
+	patching file kernel/trace/ring_buffer.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	18 out of 18 hunks ignored -- saving rejects to file kernel/trace/ring_buffer.c.rej
+
+056 I 0015-make-non-exchanging-__d_move-copy-d_parent-rather-th.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	6 out of 6 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+057 N 0015-tracing-Add-timestamp_mode-trace-file.patch
+
+	can't find file to patch at input line 30
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|From: Tom Zanussi <tom.zanussi@linux.intel.com>
+	|Date: Mon, 15 Jan 2018 20:51:41 -0600
+	|Subject: [PATCH 15/48] tracing: Add timestamp_mode trace file
+	|
+	|Add a new option flag indicating whether or not the ring buffer is in
+	|'absolute timestamp' mode.
+	|
+	|Currently this is only set/unset by hist triggers that make use of a
+	|common_timestamp.  As such, there's no reason to make this writeable
+	|for users - its purpose is only to allow users to determine
+	|unequivocally whether or not the ring buffer is in that mode (although
+	|absolute timestamps can coexist with the normal delta timestamps, when
+	|the ring buffer is in absolute mode, timestamps written while absolute
+	|mode is in effect take up more space in the buffer, and are not as
+	|efficient).
+	|
+	|Link: http://lkml.kernel.org/r/e8aa7b1cde1cf15014e66545d06ac6ef2ebba456.1516069914.git.tom.zanussi@linux.intel.com
+	|
+	|Signed-off-by: Tom Zanussi <tom.zanussi@linux.intel.com>
+	|Signed-off-by: Steven Rostedt (VMware) <rostedt@goodmis.org>
+	|(cherry picked from commit 0eba34f9bf5b66217355a6a66054b3194aca123d)
+	|Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+	|---
+	| Documentation/trace/ftrace.txt |   24 ++++++++++++++++++++
+	| kernel/trace/trace.c           |   47 +++++++++++++++++++++++++++++++++++++++++
+	| 2 files changed, 71 insertions(+)
+	|
+	|--- a/Documentation/trace/ftrace.txt
+	|+++ b/Documentation/trace/ftrace.txt
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	patching file kernel/trace/trace.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	4 out of 4 hunks ignored -- saving rejects to file kernel/trace/trace.c.rej
+
+058 I 0016-fold-dentry_lock_for_move-into-its-sole-caller-and-c.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+059 F 0016-tracing-Give-event-triggers-access-to-ring_buffer_ev.patch
+
+	patching file include/linux/trace_events.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file include/linux/trace_events.h.rej
+	patching file kernel/trace/trace.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	4 out of 4 hunks ignored -- saving rejects to file kernel/trace/trace.h.rej
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 FAILED at 909.
+	Hunk #2 FAILED at 1658.
+	Hunk #3 FAILED at 1674.
+	Hunk #4 FAILED at 1682.
+	4 out of 4 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+	patching file kernel/trace/trace_events_trigger.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	17 out of 17 hunks ignored -- saving rejects to file kernel/trace/trace_events_trigger.c.rej
+
+060 I 0017-d_genocide-move-export-to-definition.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+061 F 0017-tracing-Add-ring-buffer-event-param-to-hist-field-fu.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 FAILED at 26.
+	Hunk #2 FAILED at 40.
+	Hunk #3 FAILED at 66.
+	Hunk #4 FAILED at 871.
+	Hunk #5 FAILED at 880.
+	Hunk #6 FAILED at 910.
+	Hunk #7 FAILED at 939.
+	Hunk #8 FAILED at 956.
+	8 out of 8 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+062 F 0018-tracing-Break-out-hist-trigger-assignment-parsing.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 succeeded at 1884 with fuzz 1 (offset 1633 lines).
+	Hunk #2 FAILED at 308.
+	1 out of 2 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+063 F 0019-tracing-Add-hist-trigger-timestamp-support.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 succeeded at 175 with fuzz 1 (offset 86 lines).
+	Hunk #2 FAILED at 141.
+	Hunk #3 FAILED at 165.
+	Hunk #4 FAILED at 179.
+	Hunk #5 succeeded at 2279 (offset 1833 lines).
+	Hunk #6 FAILED at 529.
+	Hunk #7 FAILED at 627.
+	Hunk #8 FAILED at 832.
+	Hunk #9 FAILED at 1227.
+	Hunk #10 FAILED at 1278.
+	Hunk #11 succeeded at 2890 with fuzz 2 (offset 1424 lines).
+	Hunk #12 succeeded at 5391 (offset 3839 lines).
+	Hunk #13 FAILED at 1589.
+	9 out of 13 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+064 I 0020-tracing-Add-per-element-variable-support-to-tracing_.patch
+
+	patching file kernel/trace/tracing_map.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	5 out of 5 hunks ignored -- saving rejects to file kernel/trace/tracing_map.c.rej
+	patching file kernel/trace/tracing_map.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	5 out of 5 hunks ignored -- saving rejects to file kernel/trace/tracing_map.h.rej
+
+065 F 0021-tracing-Add-hist_data-member-to-hist_field.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 FAILED at 39.
+	Hunk #2 FAILED at 420.
+	Hunk #3 succeeded at 2236 with fuzz 2 (offset 1804 lines).
+	Hunk #4 FAILED at 447.
+	Hunk #5 FAILED at 500.
+	Hunk #6 FAILED at 546.
+	Hunk #7 FAILED at 656.
+	6 out of 7 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+066 F 0022-tracing-Add-usecs-modifier-for-hist-trigger-timestam.patch
+
+	patching file Documentation/trace/histogram.txt
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file Documentation/trace/histogram.txt.rej
+	patching file kernel/trace/trace.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/trace.c.rej
+	patching file kernel/trace/trace.h
+	Hunk #1 succeeded at 296 with fuzz 2 (offset 7 lines).
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 succeeded at 175 with fuzz 1 (offset 85 lines).
+	Hunk #2 FAILED at 137.
+	Hunk #3 FAILED at 147.
+	Hunk #4 succeeded at 1673 with fuzz 2 (offset 1509 lines).
+	Hunk #5 FAILED at 642.
+	Hunk #6 FAILED at 651.
+	Hunk #7 FAILED at 1249.
+	5 out of 7 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+067 F 0023-tracing-Add-variable-support-to-hist-triggers.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 FAILED at 30.
+	Hunk #2 FAILED at 40.
+	Hunk #3 FAILED at 138.
+	Hunk #4 FAILED at 150.
+	Hunk #5 FAILED at 164.
+	Hunk #6 succeeded at 1687 (offset 1507 lines).
+	Hunk #7 FAILED at 304.
+	Hunk #8 succeeded at 1979 (offset 1626 lines).
+	Hunk #9 FAILED at 484.
+	Hunk #10 FAILED at 515.
+	Hunk #11 FAILED at 550.
+	Hunk #12 FAILED at 568.
+	Hunk #13 FAILED at 580.
+	Hunk #14 FAILED at 614.
+	Hunk #15 FAILED at 652.
+	Hunk #16 FAILED at 671.
+	Hunk #17 FAILED at 683.
+	Hunk #18 FAILED at 728.
+	Hunk #19 FAILED at 744.
+	Hunk #20 FAILED at 787.
+	Hunk #21 FAILED at 824.
+	Hunk #22 FAILED at 872.
+	Hunk #23 FAILED at 892.
+	Hunk #24 FAILED at 932.
+	Hunk #25 FAILED at 961.
+	Hunk #26 FAILED at 972.
+	Hunk #27 FAILED at 1018.
+	Hunk #28 succeeded at 4924 with fuzz 2 (offset 3724 lines).
+	Hunk #29 FAILED at 1324.
+	Hunk #30 FAILED at 1342.
+	Hunk #31 FAILED at 1353.
+	Hunk #32 FAILED at 1379.
+	Hunk #33 FAILED at 1392.
+	Hunk #34 FAILED at 1690.
+	Hunk #35 FAILED at 1723.
+	Hunk #36 FAILED at 1741.
+	Hunk #37 FAILED at 1770.
+	34 out of 37 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+068 I 0024-tracing-Account-for-variables-in-named-trigger-compa.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+069 F 0025-tracing-Move-get_hist_field_flags.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 succeeded at 2255 with fuzz 2 (offset 1758 lines).
+	Hunk #2 FAILED at 1517.
+	1 out of 2 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+070 F 0026-tracing-Add-simple-expression-support-to-hist-trigge.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 succeeded at 48 with fuzz 2 (offset 16 lines).
+	Hunk #2 FAILED at 55.
+	Hunk #3 succeeded at 182 with fuzz 1 (offset 77 lines).
+	Hunk #4 FAILED at 189.
+	Hunk #5 succeeded at 1801 with fuzz 2 (offset 1501 lines).
+	Hunk #6 FAILED at 563.
+	Hunk #7 FAILED at 578.
+	Hunk #8 succeeded at 2368 with fuzz 1 (offset 1770 lines).
+	Hunk #9 succeeded at 4008 with fuzz 1 (offset 3335 lines).
+	Hunk #10 FAILED at 946.
+	Hunk #11 FAILED at 1063.
+	Hunk #12 FAILED at 1079.
+	Hunk #13 succeeded at 5244 with fuzz 2 (offset 3527 lines).
+	7 out of 13 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+071 F 0027-tracing-Generalize-per-element-hist-trigger-data.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 succeeded at 1771 (offset 1482 lines).
+	Hunk #2 FAILED at 507.
+	Hunk #3 FAILED at 1488.
+	Hunk #4 FAILED at 1528.
+	Hunk #5 FAILED at 1717.
+	4 out of 5 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+072 I 0028-tracing-Pass-tracing_map_elt-to-hist_field-accessor-.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	9 out of 9 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+073 I 0029-tracing-Add-hist_field-type-field.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	8 out of 8 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+074 I 0030-tracing-Add-variable-reference-handling-to-hist-trig.patch
+
+	patching file kernel/trace/trace.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/trace.c.rej
+	patching file kernel/trace/trace.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/trace.h.rej
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	23 out of 23 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+	patching file kernel/trace/trace_events_trigger.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace_events_trigger.c.rej
+
+075 I 0031-tracing-Add-hist-trigger-action-hook.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	11 out of 11 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+076 I 0032-tracing-Add-support-for-synthetic-events.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	11 out of 11 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+077 I 0033-tracing-Add-support-for-field-variables.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	12 out of 12 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+078 I 0034-tracing-Add-onmatch-hist-trigger-action-support.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	18 out of 18 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+079 I 0035-tracing-Add-onmax-hist-trigger-action-support.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	12 out of 12 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+080 I 0036-tracing-Allow-whitespace-to-surround-hist-trigger-fi.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+081 F 0037-tracing-Add-cpu-field-for-hist-triggers.patch
+
+	patching file Documentation/trace/histogram.txt
+	Hunk #1 succeeded at 9 with fuzz 2 (offset -163 lines).
+	patching file kernel/trace/trace_events_hist.c
+	Hunk #1 FAILED at 227.
+	Hunk #2 succeeded at 1288 with fuzz 1 (offset 124 lines).
+	Hunk #3 FAILED at 1612.
+	Hunk #4 succeeded at 2434 (offset 315 lines).
+	Hunk #5 succeeded at 4070 (offset 1706 lines).
+	Hunk #6 FAILED at 4640.
+	3 out of 6 hunks FAILED -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+082 I 0038-tracing-Add-hist-trigger-support-for-variable-refere.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	8 out of 8 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+083 I 0039-tracing-Add-last-error-error-facility-for-hist-trigg.patch
+
+	patching file Documentation/trace/histogram.txt
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file Documentation/trace/histogram.txt.rej
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	31 out of 31 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+084 F 0040-tracing-Add-inter-event-hist-trigger-Documentation.patch
+
+	patching file Documentation/trace/histogram.txt
+	Hunk #1 FAILED at 1603.
+	1 out of 1 hunk FAILED -- saving rejects to file Documentation/trace/histogram.txt.rej
+
+085 I 0041-tracing-Make-tracing_set_clock-non-static.patch
+
+	patching file kernel/trace/trace.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace.c.rej
+	patching file kernel/trace/trace.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/trace.h.rej
+
+086 I 0042-tracing-Add-a-clock-attribute-for-hist-triggers.patch
+
+	patching file Documentation/trace/histogram.txt
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file Documentation/trace/histogram.txt.rej
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	7 out of 7 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+087 I 0045-ring-buffer-Add-nesting-for-adding-events-within-eve.patch
+
+	patching file include/linux/ring_buffer.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/ring_buffer.h.rej
+	patching file kernel/trace/ring_buffer.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file kernel/trace/ring_buffer.c.rej
+
+088 I 0046-tracing-Use-the-ring-buffer-nesting-to-allow-synthet.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+089 I 0047-tracing-Add-inter-event-blurb-to-HIST_TRIGGERS-confi.patch
+
+	patching file kernel/trace/Kconfig
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/trace/Kconfig.rej
+
+090 I 0048-selftests-ftrace-Add-inter-event-hist-triggers-testc.patch
+
+	patching file tools/testing/selftests/ftrace/test.d/functions
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file tools/testing/selftests/ftrace/test.d/functions.rej
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-extended-error-support.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-field-variable-support.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-inter-event-combined-hist.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-onmatch-action-hist.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-onmatch-onmax-action-hist.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-onmax-action-hist.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	The next patch would create the file tools/testing/selftests/ftrace/test.d/trigger/inter-event/trigger-synthetic-event-createremove.tc,
+	which already exists!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+
+091 S ACPICA-Convert-acpi_gbl_hardware-lock-back-to-an-acp.patch
+
+	patching file drivers/acpi/acpica/acglobal.h
+	Hunk #1 succeeded at 82 (offset -34 lines).
+	patching file drivers/acpi/acpica/hwregs.c
+	Hunk #1 succeeded at 390 (offset -36 lines).
+	patching file drivers/acpi/acpica/hwxface.c
+	Hunk #1 succeeded at 227 (offset -34 lines).
+	Hunk #2 succeeded at 288 (offset -34 lines).
+	patching file drivers/acpi/acpica/utmutex.c
+	Hunk #1 succeeded at 52 (offset -36 lines).
+	Hunk #2 succeeded at 109 (offset -36 lines).
+
+092 S ACPICA-provide-abstraction-for-raw_spinlock_t.patch
+
+	patching file include/acpi/acpiosxf.h
+	Hunk #1 succeeded at 98 (offset -34 lines).
+	patching file include/acpi/actypes.h
+	Hunk #1 succeeded at 245 (offset -34 lines).
+	patching file include/acpi/platform/aclinux.h
+	Hunk #1 succeeded at 102 (offset -32 lines).
+	Hunk #2 succeeded at 120 (offset -32 lines).
+	patching file include/acpi/platform/aclinuxex.h
+	Hunk #1 succeeded at 90 (offset -34 lines).
+
+093 F add_migrate_disable.patch
+
+	patching file include/linux/preempt.h
+	patching file include/linux/sched.h
+	Hunk #1 FAILED at 592.
+	1 out of 1 hunk FAILED -- saving rejects to file include/linux/sched.h.rej
+	patching file include/linux/smp.h
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 1029 (offset -5 lines).
+	Hunk #2 succeeded at 1066 (offset -5 lines).
+	Hunk #3 succeeded at 1138 (offset -5 lines).
+	Hunk #4 FAILED at 7061.
+	1 out of 4 hunks FAILED -- saving rejects to file kernel/sched/core.c.rej
+	patching file kernel/sched/debug.c
+	Hunk #1 succeeded at 1005 (offset -25 lines).
+
+094 S alim15x3-move-irq-restore-before-pci_dev_put.patch
+
+	patching file drivers/ide/alim15x3.c
+
+095 S ALSA-pcm-Hide-local_irq_disable-enable-and-local_irq.patch
+
+	patching file sound/core/pcm_native.c
+
+096 S apparmor-use-a-locallock-instead-preempt_disable.patch
+
+	patching file security/apparmor/include/path.h
+	Hunk #1 succeeded at 39 with fuzz 2.
+	Hunk #2 succeeded at 51 (offset -5 lines).
+	Hunk #3 succeeded at 81 (offset -5 lines).
+	patching file security/apparmor/lsm.c
+
+097 S arch-arm64-Add-lazy-preempt-support.patch
+
+	patching file arch/arm64/Kconfig
+	patching file arch/arm64/include/asm/thread_info.h
+	patching file arch/arm64/kernel/asm-offsets.c
+	Hunk #1 succeeded at 41 (offset 1 line).
+	patching file arch/arm64/kernel/entry.S
+	patching file arch/arm64/kernel/signal.c
+	Hunk #1 succeeded at 909 (offset -3 lines).
+
+098 S arm64-fpsimd-use-a-local_lock-instead-of-local_bh_di.patch
+
+	patching file arch/arm64/kernel/fpsimd.c
+	Hunk #1 succeeded at 38 with fuzz 2.
+	Hunk #2 succeeded at 238 with fuzz 2 (offset 2 lines).
+	Hunk #3 succeeded at 597 (offset 2 lines).
+	Hunk #4 succeeded at 608 (offset 2 lines).
+	Hunk #7 succeeded at 933 with fuzz 2 (offset 1 line).
+	Hunk #8 succeeded at 976 (offset 2 lines).
+	Hunk #9 succeeded at 990 (offset 2 lines).
+	Hunk #10 succeeded at 1033 (offset 1 line).
+	Hunk #11 succeeded at 1055 with fuzz 2 (offset 1 line).
+	Hunk #12 succeeded at 1066 (offset 1 line).
+	Hunk #13 succeeded at 1131 (offset 1 line).
+	Hunk #14 succeeded at 1144 (offset 1 line).
+
+099 S arm64-xen--Make-XEN-depend-on-non-rt.patch
+
+	patching file arch/arm64/Kconfig
+	Hunk #1 succeeded at 865 (offset 5 lines).
+
+100 S arm-convert-boot-lock-to-raw.patch
+
+	patching file arch/arm/mach-exynos/platsmp.c
+	patching file arch/arm/mach-hisi/platmcpm.c
+	patching file arch/arm/mach-omap2/omap-smp.c
+	patching file arch/arm/mach-prima2/platsmp.c
+	patching file arch/arm/mach-qcom/platsmp.c
+	patching file arch/arm/mach-spear/platsmp.c
+	patching file arch/arm/mach-sti/platsmp.c
+	patching file arch/arm/plat-versatile/platsmp.c
+
+101 S arm-disable-NEON-in-kernel-mode.patch
+
+	patching file arch/arm/Kconfig
+	Hunk #1 succeeded at 2169 (offset 3 lines).
+	patching file arch/arm64/crypto/Kconfig
+	patching file arch/arm64/crypto/crc32-ce-glue.c
+
+102 S arm-enable-highmem-for-rt.patch
+
+	patching file arch/arm/include/asm/switch_to.h
+	patching file arch/arm/mm/highmem.c
+	Hunk #5 succeeded at 115 with fuzz 1.
+	patching file include/linux/highmem.h
+
+103 S ARM-enable-irq-in-translation-section-permission-fau.patch
+
+	patching file arch/arm/mm/fault.c
+
+104 S arm-highmem-flush-tlb-on-unmap.patch
+
+	patching file arch/arm/mm/highmem.c
+	Hunk #1 succeeded at 124 with fuzz 1 (offset 12 lines).
+
+105 S arm-include-definition-for-cpumask_t.patch
+
+	patching file arch/arm/include/asm/irq.h
+
+106 S arm-kprobe-replace-patch_lock-to-raw-lock.patch
+
+	patching file arch/arm/kernel/patch.c
+
+107 S arm-preempt-lazy-support.patch
+
+	patching file arch/arm/Kconfig
+	Hunk #1 succeeded at 89 (offset 1 line).
+	patching file arch/arm/include/asm/thread_info.h
+	patching file arch/arm/kernel/asm-offsets.c
+	patching file arch/arm/kernel/entry-armv.S
+	patching file arch/arm/kernel/entry-common.S
+	patching file arch/arm/kernel/signal.c
+
+108 S arm-unwind-use_raw_lock.patch
+
+	patching file arch/arm/kernel/unwind.c
+
+109 S at91_dont_enable_disable_clock.patch
+
+	patching file drivers/clocksource/tcb_clksrc.c
+
+110 S block-avoid-disabling-interrupts-during-kmap_atomic.patch
+
+	patching file block/bounce.c
+
+111 S block-blk-mq-move-blk_queue_usage_counter_release-in.patch
+
+	patching file block/blk-core.c
+	Hunk #1 succeeded at 964 (offset 88 lines).
+	Hunk #2 succeeded at 1066 with fuzz 1 (offset 99 lines).
+	Hunk #3 succeeded at 3963 (offset 115 lines).
+	patching file include/linux/blkdev.h
+	Hunk #2 succeeded at 651 (offset -3 lines).
+
+112 S block-mq-don-t-complete-requests-via-IPI.patch
+
+	patching file block/blk-core.c
+	Hunk #1 succeeded at 189 (offset 72 lines).
+	patching file block/blk-mq.c
+	Hunk #1 succeeded at 319 (offset 8 lines).
+	Hunk #2 succeeded at 529 (offset 8 lines).
+	Hunk #3 succeeded at 574 (offset 8 lines).
+	patching file include/linux/blk-mq.h
+	Hunk #1 succeeded at 247 (offset 2 lines).
+	patching file include/linux/blkdev.h
+	Hunk #1 succeeded at 143 (offset 1 line).
+
+113 S block-mq-drop-preempt-disable.patch
+
+	patching file block/blk-mq.c
+	Hunk #1 succeeded at 569 (offset 23 lines).
+	Hunk #2 succeeded at 589 (offset 31 lines).
+	Hunk #3 succeeded at 1436 (offset 31 lines).
+
+114 S block-mq-use-cpu_light.patch
+
+	patching file block/blk-mq.h
+	Hunk #1 succeeded at 150 (offset 3 lines).
+
+115 S block-Remove-redundant-WARN_ON.patch
+
+	patching file block/blk-core.c
+	Hunk #1 succeeded at 363 (offset 75 lines).
+
+116 S block-shorten-interrupt-disabled-regions.patch
+
+	patching file block/blk-core.c
+	Hunk #1 succeeded at 3642 (offset 122 lines).
+	Hunk #2 succeeded at 3690 (offset 122 lines).
+	Hunk #3 succeeded at 3709 (offset 122 lines).
+	Hunk #4 succeeded at 3721 (offset 122 lines).
+	Hunk #5 succeeded at 3748 (offset 122 lines).
+
+117 S block-use-cpu-chill.patch
+
+	patching file block/blk-ioc.c
+
+118 F cgroups-use-simple-wait-in-css_release.patch
+
+	patching file include/linux/cgroup-defs.h
+	Hunk #2 FAILED at 154.
+	1 out of 2 hunks FAILED -- saving rejects to file include/linux/cgroup-defs.h.rej
+	patching file kernel/cgroup/cgroup.c
+	Hunk #1 succeeded at 4573 with fuzz 1 (offset -9 lines).
+	Hunk #2 succeeded at 4631 (offset -8 lines).
+	Hunk #3 succeeded at 5352 (offset -7 lines).
+
+119 S clocksource-tclib-allow-higher-clockrates.patch
+
+	patching file drivers/clocksource/tcb_clksrc.c
+	patching file drivers/misc/Kconfig
+	Hunk #2 succeeded at 82 (offset -1 lines).
+
+120 F completion-use-simple-wait-queues.patch
+
+	patching file drivers/net/wireless/intersil/orinoco/orinoco_usb.c
+	patching file drivers/usb/gadget/function/f_fs.c
+	patching file drivers/usb/gadget/legacy/inode.c
+	patching file include/linux/completion.h
+	patching file include/linux/suspend.h
+	patching file include/linux/swait.h
+	Hunk #1 succeeded at 147 (offset -1 lines).
+	patching file kernel/power/hibernate.c
+	patching file kernel/power/suspend.c
+	patching file kernel/sched/completion.c
+	Hunk #1 succeeded at 29 (offset -3 lines).
+	Hunk #2 succeeded at 58 (offset -3 lines).
+	Hunk #3 succeeded at 70 (offset -3 lines).
+	Hunk #4 succeeded at 100 (offset -3 lines).
+	Hunk #5 FAILED at 294.
+	Hunk #6 succeeded at 322 (offset -3 lines).
+	1 out of 6 hunks FAILED -- saving rejects to file kernel/sched/completion.c.rej
+	patching file kernel/sched/core.c
+	Hunk #1 FAILED at 7080.
+	Hunk #2 FAILED at 7110.
+	2 out of 2 hunks FAILED -- saving rejects to file kernel/sched/core.c.rej
+	patching file kernel/sched/swait.c
+	Hunk #1 FAILED at 1.
+	Hunk #2 succeeded at 32 (offset 2 lines).
+	1 out of 2 hunks FAILED -- saving rejects to file kernel/sched/swait.c.rej
+
+121 S cond-resched-lock-rt-tweak.patch
+
+	patching file include/linux/preempt.h
+
+122 S cond-resched-softirq-rt.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 1681 (offset 48 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 5054 (offset 33 lines).
+	Hunk #2 succeeded at 5068 (offset 33 lines).
+
+123 S connector-cn_proc-Protect-send_msg-with-a-local-lock.patch
+
+	patching file drivers/connector/cn_proc.c
+
+124 S cpufreq-drop-K8-s-driver-from-beeing-selected.patch
+
+	patching file drivers/cpufreq/Kconfig.x86
+
+125 F cpu-hotplug--Implement-CPU-pinning.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 FAILED at 649.
+	1 out of 1 hunk FAILED -- saving rejects to file include/linux/sched.h.rej
+	patching file kernel/cpu.c
+	Hunk #2 FAILED at 296.
+	Hunk #3 succeeded at 1125 with fuzz 2 (offset 821 lines).
+	Hunk #4 FAILED at 780.
+	Hunk #5 FAILED at 793.
+	Hunk #6 FAILED at 816.
+	4 out of 6 hunks FAILED -- saving rejects to file kernel/cpu.c.rej
+
+126 S cpumask-disable-offstack-on-rt.patch
+
+	patching file arch/x86/Kconfig
+	Hunk #1 succeeded at 940 (offset -5 lines).
+	patching file lib/Kconfig
+	Hunk #1 succeeded at 444 (offset 16 lines).
+
+127 S cpuset-Convert-callback_lock-to-raw_spinlock_t.patch
+
+	patching file kernel/cgroup/cpuset.c
+
+128 F crypto-limit-more-FPU-enabled-sections.patch
+
+	patching file arch/x86/crypto/camellia_aesni_avx2_glue.c
+	Hunk #1 FAILED at 206.
+	Hunk #2 FAILED at 221.
+	Hunk #3 FAILED at 251.
+	3 out of 3 hunks FAILED -- saving rejects to file arch/x86/crypto/camellia_aesni_avx2_glue.c.rej
+	patching file arch/x86/crypto/camellia_aesni_avx_glue.c
+	Hunk #1 FAILED at 210.
+	Hunk #2 FAILED at 225.
+	Hunk #3 FAILED at 249.
+	3 out of 3 hunks FAILED -- saving rejects to file arch/x86/crypto/camellia_aesni_avx_glue.c.rej
+	patching file arch/x86/crypto/cast6_avx_glue.c
+	Hunk #1 FAILED at 205.
+	Hunk #2 FAILED at 228.
+	2 out of 2 hunks FAILED -- saving rejects to file arch/x86/crypto/cast6_avx_glue.c.rej
+	patching file arch/x86/crypto/chacha20_glue.c
+	patching file arch/x86/crypto/serpent_avx2_glue.c
+	Hunk #1 FAILED at 184.
+	Hunk #2 FAILED at 199.
+	Hunk #3 FAILED at 223.
+	3 out of 3 hunks FAILED -- saving rejects to file arch/x86/crypto/serpent_avx2_glue.c.rej
+	patching file arch/x86/crypto/serpent_avx_glue.c
+	Hunk #1 FAILED at 218.
+	Hunk #2 FAILED at 241.
+	2 out of 2 hunks FAILED -- saving rejects to file arch/x86/crypto/serpent_avx_glue.c.rej
+	patching file arch/x86/crypto/serpent_sse2_glue.c
+	Hunk #1 FAILED at 187.
+	Hunk #2 FAILED at 210.
+	2 out of 2 hunks FAILED -- saving rejects to file arch/x86/crypto/serpent_sse2_glue.c.rej
+	patching file arch/x86/crypto/twofish_avx_glue.c
+	Hunk #1 FAILED at 218.
+	Hunk #2 FAILED at 228.
+	Hunk #3 FAILED at 250.
+	3 out of 3 hunks FAILED -- saving rejects to file arch/x86/crypto/twofish_avx_glue.c.rej
+	patching file arch/x86/include/asm/fpu/api.h
+	patching file arch/x86/kernel/fpu/core.c
+
+129 F crypto-Reduce-preempt-disabled-regions-more-algos.patch
+
+	patching file arch/x86/crypto/cast5_avx_glue.c
+	Hunk #1 FAILED at 59.
+	Hunk #2 FAILED at 73.
+	Hunk #3 FAILED at 102.
+	Hunk #4 FAILED at 226.
+	Hunk #5 FAILED at 235.
+	Hunk #6 FAILED at 309.
+	Hunk #7 FAILED at 318.
+	7 out of 7 hunks FAILED -- saving rejects to file arch/x86/crypto/cast5_avx_glue.c.rej
+	patching file arch/x86/crypto/glue_helper.c
+	Hunk #1 FAILED at 40.
+	Hunk #2 FAILED at 50.
+	Hunk #3 FAILED at 72.
+	Hunk #4 FAILED at 192.
+	Hunk #5 FAILED at 201.
+	Hunk #6 FAILED at 275.
+	Hunk #7 FAILED at 284.
+	Hunk #8 FAILED at 380.
+	Hunk #9 FAILED at 393.
+	9 out of 9 hunks FAILED -- saving rejects to file arch/x86/crypto/glue_helper.c.rej
+
+130 I d_delete-get-rid-of-trylock-loop.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file fs/dcache.c.rej
+
+131 S debugobjects-rt.patch
+
+	patching file lib/debugobjects.c
+	Hunk #1 succeeded at 374 (offset 38 lines).
+
+132 S delayacct-use-raw_spinlocks.patch
+
+	patching file include/linux/delayacct.h
+	patching file kernel/delayacct.c
+
+133 S dm-rq-remove-BUG_ON-irqs_disabled-check.patch
+
+	patching file drivers/md/dm-rq.c
+
+134 F drivers-block-zram-Replace-bit-spinlocks-with-rtmute.patch
+
+	patching file drivers/block/zram/zram_drv.c
+	Hunk #1 succeeded at 753 (offset 5 lines).
+	Hunk #2 succeeded at 786 (offset 5 lines).
+	Hunk #3 FAILED at 811.
+	1 out of 3 hunks FAILED -- saving rejects to file drivers/block/zram/zram_drv.c.rej
+	patching file drivers/block/zram/zram_drv.h
+	Hunk #1 succeeded at 60 (offset -17 lines).
+
+135 F drivers-random-reduce-preempt-disabled-region.patch
+
+	patching file drivers/char/random.c
+	Hunk #2 FAILED at 1162.
+	1 out of 2 hunks FAILED -- saving rejects to file drivers/char/random.c.rej
+
+136 S drivers-tty-fix-omap-lock-crap.patch
+
+	patching file drivers/tty/serial/omap-serial.c
+
+137 S drivers-tty-pl011-irq-disable-madness.patch
+
+	patching file drivers/tty/serial/amba-pl011.c
+
+138 S drivers-zram-Don-t-disable-preemption-in-zcomp_strea.patch
+
+	patching file drivers/block/zram/zcomp.c
+	patching file drivers/block/zram/zcomp.h
+	patching file drivers/block/zram/zram_drv.c
+	Hunk #1 succeeded at 869 (offset 6 lines).
+	Hunk #2 succeeded at 904 (offset 6 lines).
+	Hunk #3 succeeded at 912 (offset 6 lines).
+
+139 S drivers-zram-fix-zcomp_stream_get-smp_processor_id-u.patch
+
+	patching file drivers/block/zram/zcomp.c
+
+140 S drmi915_Use_local_lockunlock_irq()_in_intel_pipe_update_startend().patch
+
+	patching file drivers/gpu/drm/i915/intel_sprite.c
+	Hunk #2 succeeded at 74 (offset -1 lines).
+	Hunk #3 succeeded at 109 (offset -1 lines).
+	Hunk #4 succeeded at 139 (offset -1 lines).
+	Hunk #5 succeeded at 208 (offset -1 lines).
+
+141 S drmradeoni915_Use_preempt_disableenable_rt()_where_recommended.patch
+
+	patching file drivers/gpu/drm/i915/i915_irq.c
+	Hunk #1 succeeded at 948 (offset 12 lines).
+	Hunk #2 succeeded at 1000 (offset 12 lines).
+	patching file drivers/gpu/drm/radeon/radeon_display.c
+
+142 S epoll-use-get-cpu-light.patch
+
+	patching file fs/eventpoll.c
+
+143 F fs-aio-simple-simple-work.patch
+
+	patching file fs/aio.c
+	Hunk #2 FAILED at 118.
+	Hunk #3 succeeded at 259 (offset -1 lines).
+	Hunk #4 succeeded at 626 (offset -9 lines).
+	Hunk #5 succeeded at 646 (offset -10 lines).
+	1 out of 5 hunks FAILED -- saving rejects to file fs/aio.c.rej
+
+144 S fs-dcache-bring-back-explicit-INIT_HLIST_BL_HEAD-in.patch
+
+	patching file fs/dcache.c
+	Hunk #1 succeeded at 3185 (offset 60 lines).
+	Hunk #2 succeeded at 3203 (offset 60 lines).
+	Hunk #3 succeeded at 3236 (offset 60 lines).
+
+145 S fs-dcache-disable-preemption-on-i_dir_seq-s-write-si.patch
+
+	patching file fs/dcache.c
+	Hunk #1 succeeded at 2500 (offset 60 lines).
+	Hunk #2 succeeded at 2511 (offset 60 lines).
+	Hunk #3 succeeded at 2545 (offset 60 lines).
+	Hunk #4 succeeded at 2573 (offset 60 lines).
+	patching file fs/inode.c
+	patching file fs/libfs.c
+	patching file include/linux/fs.h
+
+146 I fs-dcache-Move-dentry_kill-below-lock_parent.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+147 I fs-dcache-Remove-stale-comment-from-dentry_kill.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file fs/dcache.c.rej
+
+148 F fs-dcache-use-cpu-chill-in-trylock-loops.patch
+
+	patching file fs/autofs4/autofs_i.h
+	patching file fs/autofs4/expire.c
+	patching file fs/namespace.c
+	Hunk #2 FAILED at 356.
+	1 out of 2 hunks FAILED -- saving rejects to file fs/namespace.c.rej
+
+149 S fs-dcache-use-swait_queue-instead-of-waitqueue.patch
+
+	patching file fs/cifs/readdir.c
+	patching file fs/dcache.c
+	Hunk #1 succeeded at 2517 (offset 60 lines).
+	Hunk #2 succeeded at 2649 (offset 60 lines).
+	patching file fs/fuse/dir.c
+	patching file fs/namei.c
+	Hunk #1 succeeded at 1604 with fuzz 2 (offset 3 lines).
+	Hunk #2 succeeded at 3087 (offset -8 lines).
+	patching file fs/nfs/dir.c
+	Hunk #2 succeeded at 1438 (offset 2 lines).
+	patching file fs/nfs/unlink.c
+	Hunk #2 succeeded at 183 (offset -23 lines).
+	patching file fs/proc/base.c
+	Hunk #1 succeeded at 1885 (offset 6 lines).
+	patching file fs/proc/proc_sysctl.c
+	patching file include/linux/dcache.h
+	Hunk #2 succeeded at 238 (offset 1 line).
+	patching file include/linux/nfs_xdr.h
+	patching file kernel/sched/swait.c
+	Hunk #1 succeeded at 70 (offset 1 line).
+
+150 F fs-jbd-replace-bh_state-lock.patch
+
+	patching file include/linux/buffer_head.h
+	Hunk #1 FAILED at 78.
+	Hunk #2 FAILED at 109.
+	2 out of 2 hunks FAILED -- saving rejects to file include/linux/buffer_head.h.rej
+	patching file include/linux/jbd2.h
+
+151 S fs-namespace-preemption-fix.patch
+
+	patching file fs/namespace.c
+	Hunk #1 succeeded at 354 (offset 1 line).
+
+152 S fs-nfs-turn-rmdir_sem-into-a-semaphore.patch
+
+	patching file fs/nfs/dir.c
+	Hunk #1 succeeded at 1758 (offset 2 lines).
+	Hunk #2 succeeded at 1772 (offset 2 lines).
+	patching file fs/nfs/inode.c
+	Hunk #1 succeeded at 2048 (offset 9 lines).
+	patching file fs/nfs/unlink.c
+	patching file include/linux/nfs_fs.h
+
+153 S fs-replace-bh_uptodate_lock-for-rt.patch
+
+	patching file fs/buffer.c
+	Hunk #1 succeeded at 273 (offset -1 lines).
+	Hunk #2 succeeded at 286 (offset -1 lines).
+	Hunk #3 succeeded at 298 (offset -1 lines).
+	Hunk #4 succeeded at 325 (offset -1 lines).
+	Hunk #5 succeeded at 337 (offset -1 lines).
+	Hunk #6 succeeded at 3341 (offset -23 lines).
+	patching file fs/ext4/page-io.c
+	patching file fs/ntfs/aops.c
+	Hunk #1 succeeded at 108 (offset 2 lines).
+	Hunk #2 succeeded at 123 (offset 2 lines).
+	Hunk #3 succeeded at 158 (offset 4 lines).
+	patching file fs/xfs/xfs_aops.c
+	patching file include/linux/buffer_head.h
+
+154 F ftrace-Fix-trace-header-alignment.patch
+
+	patching file kernel/trace/trace.c
+	Hunk #1 FAILED at 3338.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/trace/trace.c.rej
+
+155 S ftrace-migrate-disable-tracing.patch
+
+	patching file include/linux/trace_events.h
+	patching file kernel/trace/trace.c
+	Hunk #1 succeeded at 2142 (offset 1 line).
+	Hunk #2 succeeded at 3342 (offset 1 line).
+	patching file kernel/trace/trace_events.c
+	patching file kernel/trace/trace_output.c
+
+156 S futex-Ensure-lock-unlock-symetry-versus-pi_lock-and-.patch
+
+	patching file kernel/futex.c
+
+157 F futex-requeue-pi-fix.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 FAILED at 137.
+	Hunk #2 succeeded at 1714 (offset -28 lines).
+	1 out of 2 hunks FAILED -- saving rejects to file kernel/locking/rtmutex.c.rej
+	patching file kernel/locking/rtmutex_common.h
+	Hunk #1 FAILED at 131.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/locking/rtmutex_common.h.rej
+
+158 S futex-workaround-migrate_disable-enable-in-different.patch
+
+	patching file kernel/futex.c
+	Hunk #1 succeeded at 2800 (offset 2 lines).
+	Hunk #2 succeeded at 2958 (offset 2 lines).
+
+159 S genirq-disable-irqpoll-on-rt.patch
+
+	patching file kernel/irq/spurious.c
+	Hunk #1 succeeded at 442 (offset -2 lines).
+	Hunk #2 succeeded at 458 (offset -2 lines).
+
+160 S genirq-do-not-invoke-the-affinity-callback-via-a-wor.patch
+
+	patching file include/linux/interrupt.h
+	Hunk #1 succeeded at 13 (offset -2 lines).
+	Hunk #2 succeeded at 226 (offset -2 lines).
+	Hunk #3 succeeded at 238 (offset -2 lines).
+	patching file kernel/irq/manage.c
+	Hunk #1 succeeded at 223 (offset -4 lines).
+	Hunk #2 succeeded at 266 (offset -4 lines).
+	Hunk #3 succeeded at 289 (offset -4 lines).
+	Hunk #4 succeeded at 346 (offset -4 lines).
+
+161 S genirq-force-threading.patch
+
+	patching file include/linux/interrupt.h
+	Hunk #1 succeeded at 433 (offset 4 lines).
+	patching file kernel/irq/manage.c
+	Hunk #1 succeeded at 23 with fuzz 2 (offset -1 lines).
+	Hunk #2 succeeded at 32 (offset -2 lines).
+
+162 S genirq-update-irq_set_irqchip_state-documentation.patch
+
+	patching file kernel/irq/manage.c
+	Hunk #1 succeeded at 2209 (offset -9 lines).
+
+163 S HACK-printk-drop-the-logbuf_lock-more-often.patch
+
+	patching file kernel/printk/printk.c
+	Hunk #1 succeeded at 1352 (offset -59 lines).
+	Hunk #2 succeeded at 1365 (offset -59 lines).
+	Hunk #3 succeeded at 1385 (offset -59 lines).
+	Hunk #4 succeeded at 1404 (offset -59 lines).
+	Hunk #5 succeeded at 1450 (offset -59 lines).
+
+164 F hotplug-duct-tape-RT-rwlock-usage-for-non-RT.patch
+
+	patching file kernel/cpu.c
+	Hunk #2 FAILED at 296.
+	Hunk #3 FAILED at 320.
+	Hunk #4 succeeded at 1125 with fuzz 2 (offset 798 lines).
+	Hunk #5 succeeded at 1133 with fuzz 1 (offset 798 lines).
+	Hunk #6 FAILED at 805.
+	Hunk #7 FAILED at 819.
+	Hunk #8 FAILED at 845.
+	5 out of 8 hunks FAILED -- saving rejects to file kernel/cpu.c.rej
+
+165 F hotplug-light-get-online-cpus.patch
+
+	patching file include/linux/cpu.h
+	patching file kernel/cpu.c
+	Hunk #1 succeeded at 287 (offset 1 line).
+	patching file kernel/sched/core.c
+	Hunk #1 FAILED at 7178.
+	Hunk #2 FAILED at 7243.
+	2 out of 2 hunks FAILED -- saving rejects to file kernel/sched/core.c.rej
+
+166 F hrtimer-by-timers-by-default-into-the-softirq-context.patch
+
+	patching file arch/x86/kvm/lapic.c
+	Hunk #1 succeeded at 2178 (offset 20 lines).
+	patching file include/linux/hrtimer.h
+	Hunk #1 succeeded at 41 (offset -1 lines).
+	Hunk #2 succeeded at 52 (offset -1 lines).
+	patching file kernel/events/core.c
+	Hunk #1 succeeded at 1102 (offset 12 lines).
+	Hunk #2 succeeded at 9161 (offset 478 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 320 (offset -24 lines).
+	patching file kernel/sched/deadline.c
+	Hunk #1 succeeded at 1053 (offset -4 lines).
+	patching file kernel/sched/rt.c
+	Hunk #1 succeeded at 43 (offset -4 lines).
+	patching file kernel/time/hrtimer.c
+	Hunk #1 succeeded at 1108 (offset -11 lines).
+	Hunk #2 succeeded at 1270 (offset 22 lines).
+	Hunk #3 FAILED at 1642.
+	1 out of 3 hunks FAILED -- saving rejects to file kernel/time/hrtimer.c.rej
+	patching file kernel/time/tick-broadcast-hrtimer.c
+	patching file kernel/time/tick-sched.c
+	Hunk #1 succeeded at 1305 (offset 74 lines).
+	patching file kernel/watchdog.c
+
+167 S hrtimer-consolidate-hrtimer_init-hrtimer_init_sleepe.patch
+
+	patching file block/blk-mq.c
+	Hunk #1 succeeded at 3116 (offset 2 lines).
+	patching file include/linux/hrtimer.h
+	Hunk #1 succeeded at 370 (offset 6 lines).
+	Hunk #2 succeeded at 390 (offset 6 lines).
+	Hunk #3 succeeded at 502 (offset 7 lines).
+	patching file include/linux/wait.h
+	Hunk #1 succeeded at 488 (offset -1 lines).
+	patching file kernel/futex.c
+	Hunk #1 succeeded at 2626 (offset 2 lines).
+	Hunk #2 succeeded at 2727 (offset 2 lines).
+	Hunk #3 succeeded at 3144 (offset 2 lines).
+	patching file kernel/time/hrtimer.c
+	Hunk #1 succeeded at 1658 (offset 58 lines).
+	Hunk #2 succeeded at 1719 (offset 58 lines).
+	Hunk #3 succeeded at 1755 (offset 58 lines).
+	Hunk #4 succeeded at 1775 (offset 58 lines).
+	Hunk #5 succeeded at 1970 (offset 58 lines).
+	patching file net/core/pktgen.c
+	Hunk #1 succeeded at 2162 (offset 1 line).
+	Hunk #2 succeeded at 2178 (offset 1 line).
+
+168 S hrtimer-Move-schedule_work-call-to-helper-thread.patch
+
+	patching file kernel/time/hrtimer.c
+	Hunk #1 succeeded at 730 (offset 16 lines).
+	Hunk #2 succeeded at 768 (offset 16 lines).
+
+169 S hrtimers-prepare-full-preemption.patch
+
+	patching file include/linux/hrtimer.h
+	Hunk #2 succeeded at 223 (offset 6 lines).
+	Hunk #3 succeeded at 443 (offset 6 lines).
+	Hunk #4 succeeded at 475 (offset 7 lines).
+	patching file kernel/time/alarmtimer.c
+	patching file kernel/time/hrtimer.c
+	Hunk #1 succeeded at 963 (offset 40 lines).
+	Hunk #2 succeeded at 1224 (offset 42 lines).
+	Hunk #3 succeeded at 1537 (offset 82 lines).
+	Hunk #4 succeeded at 1904 (offset 82 lines).
+	patching file kernel/time/itimer.c
+	patching file kernel/time/posix-timers.c
+	Hunk #1 succeeded at 825 (offset -2 lines).
+	Hunk #2 succeeded at 905 (offset -2 lines).
+	Hunk #3 succeeded at 914 (offset -2 lines).
+	Hunk #4 succeeded at 1001 (offset -2 lines).
+	Hunk #5 succeeded at 1035 (offset -2 lines).
+
+170 S IB-ipoib-replace-local_irq_disable-with-proper-locki.patch
+
+	patching file drivers/infiniband/ulp/ipoib/ipoib_multicast.c
+
+171 S ide-don-t-disable-interrupts-during-kmap_atomic.patch
+
+	patching file drivers/ide/ide-taskfile.c
+
+172 S ide-don-t-disable-interrupts-if-they-are-already-dis.patch
+
+	patching file drivers/ide/ide-io.c
+
+173 S ide-don-t-enable-disable-interrupts-in-force-threade.patch
+
+	patching file drivers/ide/ide-iops.c
+	patching file drivers/ide/ide-taskfile.c
+	patching file kernel/irq/manage.c
+	Hunk #1 succeeded at 25 with fuzz 2.
+
+174 S include-linux-u64_stats_sync.h-Remove-functions-with.patch
+
+	patching file include/linux/u64_stats_sync.h
+
+175 F iommu-amd-Cleanup-locking-in-__attach-detach_device.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 81 with fuzz 2 (offset 1 line).
+	Hunk #2 succeeded at 1886 (offset 3 lines).
+	Hunk #3 FAILED at 1905.
+	Hunk #4 succeeded at 1947 (offset 12 lines).
+	Hunk #5 succeeded at 2080 (offset 12 lines).
+	Hunk #6 FAILED at 2084.
+	Hunk #7 succeeded at 2132 with fuzz 2 (offset 6 lines).
+	Hunk #8 FAILED at 2791.
+	3 out of 8 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+176 S iommu-amd-Do-not-flush-when-device-is-busy.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 1879 (offset 3 lines).
+	Hunk #2 succeeded at 1943 (offset 10 lines).
+	Hunk #3 succeeded at 2039 (offset 10 lines).
+	Hunk #4 succeeded at 2066 (offset 10 lines).
+	Hunk #5 succeeded at 2080 (offset 10 lines).
+
+177 F iommu-amd-hide-unused-iommu_table_lock.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 82 with fuzz 2.
+	Hunk #2 FAILED at 3572.
+	1 out of 2 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+178 F iommu-amd-Prevent-possible-null-pointer-dereference-.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 1915 (offset 6 lines).
+	Hunk #2 succeeded at 2086 (offset -27 lines).
+	Hunk #3 FAILED at 2134.
+	Hunk #4 succeeded at 2751 (offset -54 lines).
+	1 out of 4 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+179 F irq-allow-disabling-of-softirq-processing-in-irq-thread-context.patch
+
+	patching file include/linux/interrupt.h
+	Hunk #1 succeeded at 62 (offset -2 lines).
+	Hunk #2 succeeded at 76 (offset -2 lines).
+	patching file include/linux/irq.h
+	Hunk #1 succeeded at 69 (offset -5 lines).
+	Hunk #2 succeeded at 97 (offset -5 lines).
+	patching file kernel/irq/manage.c
+	Hunk #1 succeeded at 927 (offset 3 lines).
+	Hunk #2 succeeded at 1438 (offset 3 lines).
+	patching file kernel/irq/settings.h
+	patching file kernel/softirq.c
+	Hunk #1 FAILED at 590.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/softirq.c.rej
+
+180 F irqwork-Move-irq-safe-work-to-irq-context.patch
+
+	patching file include/linux/irq_work.h
+	Hunk #1 succeeded at 52 (offset -2 lines).
+	patching file kernel/irq_work.c
+	Hunk #1 succeeded at 178 (offset -25 lines).
+	patching file kernel/time/timer.c
+	Hunk #1 FAILED at 1675.
+	Hunk #2 FAILED at 1717.
+	2 out of 2 hunks FAILED -- saving rejects to file kernel/time/timer.c.rej
+
+181 S irqwork-push_most_work_into_softirq_context.patch
+
+	patching file include/linux/irq_work.h
+	patching file kernel/irq_work.c
+	patching file kernel/sched/topology.c
+	Hunk #1 succeeded at 279 (offset -8 lines).
+	patching file kernel/time/tick-sched.c
+	Hunk #1 succeeded at 227 (offset -3 lines).
+	patching file kernel/time/timer.c
+	Hunk #1 succeeded at 1634 (offset -41 lines).
+	Hunk #2 succeeded at 1676 (offset -41 lines).
+
+182 S jump-label-rt.patch
+
+	patching file arch/arm/Kconfig
+	Hunk #1 succeeded at 48 (offset 1 line).
+
+183 S kconfig-disable-a-few-options-rt.patch
+
+	patching file arch/Kconfig
+	patching file mm/Kconfig
+	Hunk #1 succeeded at 378 (offset -7 lines).
+
+184 S kconfig-preempt-rt-full.patch
+
+	patching file init/Makefile
+	patching file kernel/Kconfig.preempt
+	Hunk #1 succeeded at 52 with fuzz 2 (offset -15 lines).
+	patching file scripts/mkcompile_h
+
+185 F kernel-printk-Don-t-try-to-print-from-IRQ-NMI-region.patch
+
+	patching file kernel/printk/printk.c
+	Hunk #1 FAILED at 1771.
+	Hunk #2 succeeded at 2483 (offset -49 lines).
+	1 out of 2 hunks FAILED -- saving rejects to file kernel/printk/printk.c.rej
+
+186 S kernel-sched-move-stack-kprobe-clean-up-to-__put_tas.patch
+
+	patching file kernel/fork.c
+	Hunk #2 succeeded at 648 (offset -14 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 2773 (offset -10 lines).
+
+187 F kernel-sched-Provide-a-pointer-to-the-valid-CPU-mask.patch
+
+	patching file arch/ia64/kernel/mca.c
+	patching file arch/mips/include/asm/switch_to.h
+	patching file arch/mips/kernel/mips-mt-fpaff.c
+	patching file arch/mips/kernel/traps.c
+	patching file arch/powerpc/platforms/cell/spufs/sched.c
+	can't find file to patch at input line 158
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/tile/include/asm/setup.h
+	|+++ b/arch/tile/include/asm/setup.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	can't find file to patch at input line 169
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/tile/kernel/hardwall.c
+	|+++ b/arch/tile/kernel/hardwall.c
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	2 out of 2 hunks ignored
+	patching file drivers/infiniband/hw/hfi1/affinity.c
+	Hunk #1 succeeded at 575 (offset -1 lines).
+	Hunk #2 succeeded at 583 (offset -1 lines).
+	Hunk #3 succeeded at 594 (offset -1 lines).
+	patching file drivers/infiniband/hw/hfi1/sdma.c
+	patching file drivers/infiniband/hw/qib/qib_file_ops.c
+	patching file fs/proc/array.c
+	Hunk #1 succeeded at 374 (offset -12 lines).
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 659 (offset 69 lines).
+	Hunk #2 succeeded at 1386 (offset 69 lines).
+	patching file init/init_task.c
+	patching file kernel/cgroup/cpuset.c
+	patching file kernel/fork.c
+	Hunk #1 succeeded at 824 (offset 11 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 FAILED at 971.
+	Hunk #2 succeeded at 994 (offset -5 lines).
+	Hunk #3 succeeded at 1025 (offset -5 lines).
+	Hunk #4 succeeded at 1117 (offset 17 lines).
+	Hunk #5 succeeded at 1285 (offset 24 lines).
+	Hunk #6 succeeded at 1329 (offset 24 lines).
+	Hunk #7 succeeded at 1476 (offset 24 lines).
+	Hunk #8 FAILED at 1492.
+	Hunk #9 succeeded at 1567 (offset 23 lines).
+	Hunk #10 succeeded at 1577 (offset 23 lines).
+	Hunk #11 FAILED at 1566.
+	Hunk #12 succeeded at 2478 (offset 22 lines).
+	Hunk #13 succeeded at 4322 (offset 82 lines).
+	Hunk #14 succeeded at 4921 (offset 82 lines).
+	Hunk #15 succeeded at 5517 (offset 88 lines).
+	Hunk #16 succeeded at 5544 (offset 88 lines).
+	Hunk #17 succeeded at 5682 (offset 89 lines).
+	3 out of 17 hunks FAILED -- saving rejects to file kernel/sched/core.c.rej
+	patching file kernel/sched/cpudeadline.c
+	Hunk #1 FAILED at 127.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/sched/cpudeadline.c.rej
+	patching file kernel/sched/cpupri.c
+	Hunk #1 succeeded at 98 (offset -5 lines).
+	patching file kernel/sched/deadline.c
+	Hunk #1 succeeded at 538 with fuzz 2 (offset -3 lines).
+	Hunk #2 succeeded at 1820 (offset 4 lines).
+	Hunk #3 succeeded at 1970 (offset 4 lines).
+	patching file kernel/sched/fair.c
+	Hunk #1 FAILED at 1588.
+	Hunk #2 succeeded at 1683 (offset -15 lines).
+	Hunk #3 succeeded at 5969 (offset 158 lines).
+	Hunk #4 succeeded at 6101 (offset 170 lines).
+	Hunk #5 succeeded at 6141 (offset 170 lines).
+	Hunk #6 succeeded at 6249 (offset 169 lines).
+	Hunk #7 succeeded at 6283 (offset 169 lines).
+	Hunk #8 succeeded at 6346 (offset 169 lines).
+	Hunk #9 succeeded at 6383 with fuzz 1 (offset 169 lines).
+	Hunk #10 succeeded at 6567 (offset 220 lines).
+	Hunk #11 succeeded at 7317 (offset 222 lines).
+	Hunk #12 succeeded at 7344 with fuzz 2 (offset 222 lines).
+	Hunk #13 succeeded at 7941 with fuzz 2 (offset 249 lines).
+	Hunk #14 succeeded at 8556 (offset 288 lines).
+	Hunk #15 succeeded at 8952 with fuzz 2 (offset 289 lines).
+	1 out of 15 hunks FAILED -- saving rejects to file kernel/sched/fair.c.rej
+	patching file kernel/sched/rt.c
+	Hunk #1 succeeded at 1595 with fuzz 2 (offset 1 line).
+	Hunk #2 succeeded at 1732 (offset 3 lines).
+	patching file kernel/trace/trace_hwlat.c
+	patching file lib/smp_processor_id.c
+	patching file samples/trace_events/trace-events-sample.c
+
+188 S kernel-signal-Remove-no-longer-required-irqsave-rest.patch
+
+	patching file kernel/signal.c
+
+189 F kernel-softirq-unlock-with-irqs-on.patch
+
+	patching file kernel/softirq.c
+	Hunk #1 FAILED at 561.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/softirq.c.rej
+
+190 S kernel-SRCU-provide-a-static-initializer.patch
+
+	patching file include/linux/notifier.h
+	patching file include/linux/srcutiny.h
+	patching file include/linux/srcutree.h
+
+191 F kgb-serial-hackaround.patch
+
+	patching file drivers/tty/serial/8250/8250_port.c
+	Hunk #2 FAILED at 3221.
+	1 out of 2 hunks FAILED -- saving rejects to file drivers/tty/serial/8250/8250_port.c.rej
+	patching file include/linux/kdb.h
+	patching file kernel/debug/kdb/kdb_io.c
+
+192 I kthread-Allow-kthread_park-on-a-parked-kthread.patch
+
+	patching file kernel/kthread.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file kernel/kthread.c.rej
+
+193 S KVM-arm-arm64-downgrade-preempt_disable-d-region-to-.patch
+
+	patching file virt/kvm/arm/arm.c
+	Hunk #1 succeeded at 676 (offset -2 lines).
+	Hunk #2 succeeded at 728 (offset -1 lines).
+	Hunk #3 succeeded at 804 (offset 1 line).
+
+194 S leds-trigger-disable-CPU-trigger-on-RT.patch
+
+	patching file drivers/leds/trigger/Kconfig
+
+195 S libata-remove-ata_sff_data_xfer_noirq.patch
+
+	patching file Documentation/driver-api/libata.rst
+	patching file drivers/ata/libata-sff.c
+	patching file drivers/ata/pata_cmd640.c
+	patching file drivers/ata/pata_icside.c
+	patching file drivers/ata/pata_imx.c
+	patching file drivers/ata/pata_legacy.c
+	patching file drivers/ata/pata_palmld.c
+	patching file drivers/ata/pata_pcmcia.c
+	patching file drivers/ata/pata_platform.c
+	patching file drivers/ata/pata_via.c
+	patching file include/linux/libata.h
+	Hunk #1 succeeded at 1832 (offset 1 line).
+
+196 F lib-percpu_ida.c-don-t-do-alloc-from-per-CPU-list-if.patch
+
+	patching file lib/percpu_ida.c
+	Hunk #1 FAILED at 141.
+	1 out of 1 hunk FAILED -- saving rejects to file lib/percpu_ida.c.rej
+
+197 F list_bl-fixup-bogus-lockdep-warning.patch
+
+	patching file include/linux/list_bl.h
+	Hunk #1 FAILED at 43.
+	1 out of 1 hunk FAILED -- saving rejects to file include/linux/list_bl.h.rej
+
+198 S list_bl.h-make-list-head-locking-RT-safe.patch
+
+	patching file include/linux/list_bl.h
+
+199 N locallock-provide-get-put-_locked_ptr-variants.patch
+
+	can't find file to patch at input line 19
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|From: Julia Cartwright <julia@ni.com>
+	|Date: Mon, 7 May 2018 08:58:56 -0500
+	|Subject: [PATCH] locallock: provide {get,put}_locked_ptr() variants
+	|
+	|Provide a set of locallocked accessors for pointers to per-CPU data;
+	|this is useful for dynamically-allocated per-CPU regions, for example.
+	|
+	|These are symmetric with the {get,put}_cpu_ptr() per-CPU accessor
+	|variants.
+	|
+	|Signed-off-by: Julia Cartwright <julia@ni.com>
+	|Signed-off-by: Sebastian Andrzej Siewior <bigeasy@linutronix.de>
+	|---
+	| include/linux/locallock.h |   10 ++++++++++
+	| 1 file changed, 10 insertions(+)
+	|
+	|--- a/include/linux/locallock.h
+	|+++ b/include/linux/locallock.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	2 out of 2 hunks ignored
+
+200 S localversion.patch
+
+	patching file localversion-rt
+
+201 S lockdep-disable-self-test.patch
+
+	patching file lib/Kconfig.debug
+	Hunk #1 succeeded at 1198 (offset 11 lines).
+
+202 S lockdep-no-softirq-accounting-on-rt.patch
+
+	patching file include/linux/irqflags.h
+	patching file kernel/locking/lockdep.c
+
+203 S lockdep-selftest-fix-warnings-due-to-missing-PREEMPT.patch
+
+	patching file lib/locking-selftest.c
+
+204 S lockdep-selftest-only-do-hardirq-context-test-for-raw-spinlock.patch
+
+	patching file lib/locking-selftest.c
+	Hunk #1 succeeded at 2084 (offset 27 lines).
+	Hunk #2 succeeded at 2097 (offset 27 lines).
+
+205 N locking-don-t-check-for-__LINUX_SPINLOCK_TYPES_H-on-.patch
+
+	patching file arch/alpha/include/asm/spinlock_types.h
+	patching file arch/arm/include/asm/spinlock_types.h
+	patching file arch/arm64/include/asm/spinlock_types.h
+	can't find file to patch at input line 74
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/blackfin/include/asm/spinlock_types.h
+	|+++ b/arch/blackfin/include/asm/spinlock_types.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	patching file arch/hexagon/include/asm/spinlock_types.h
+	patching file arch/ia64/include/asm/spinlock_types.h
+	can't find file to patch at input line 113
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/m32r/include/asm/spinlock_types.h
+	|+++ b/arch/m32r/include/asm/spinlock_types.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	can't find file to patch at input line 126
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/metag/include/asm/spinlock_types.h
+	|+++ b/arch/metag/include/asm/spinlock_types.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	can't find file to patch at input line 139
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/mn10300/include/asm/spinlock_types.h
+	|+++ b/arch/mn10300/include/asm/spinlock_types.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	patching file arch/powerpc/include/asm/spinlock_types.h
+	patching file arch/s390/include/asm/spinlock_types.h
+	patching file arch/sh/include/asm/spinlock_types.h
+	can't find file to patch at input line 191
+	Perhaps you used the wrong -p or --strip option?
+	The text leading up to this was:
+	--------------------------
+	|--- a/arch/tile/include/asm/spinlock_types.h
+	|+++ b/arch/tile/include/asm/spinlock_types.h
+	--------------------------
+	File to patch: 
+	Skip this patch? [y] 
+	Skipping patch.
+	1 out of 1 hunk ignored
+	patching file arch/xtensa/include/asm/spinlock_types.h
+	patching file include/linux/spinlock_types_up.h
+
+206 S locking-locktorture-Do-NOT-include-rwlock.h-directly.patch
+
+	patching file kernel/locking/locktorture.c
+
+207 S locking-rtmutex-don-t-drop-the-wait_lock-twice.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 1736 (offset -29 lines).
+
+208 F locking-rt-mutex-fix-deadlock-in-device-mapper-block.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 FAILED at 24.
+	Hunk #2 FAILED at 1919.
+	Hunk #3 FAILED at 1936.
+	3 out of 3 hunks FAILED -- saving rejects to file kernel/locking/rtmutex.c.rej
+
+209 I locking-rtmutex-Handle-non-enqueued-waiters-graceful.patch
+
+	patching file kernel/locking/rtmutex.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/locking/rtmutex.c.rej
+	patching file kernel/locking/rtmutex_common.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file kernel/locking/rtmutex_common.h.rej
+
+210 S locking-rtmutex-re-init-the-wait_lock-in-rt_mutex_in.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 1682 (offset -577 lines).
+
+211 S md-disable-bcache.patch
+
+	patching file drivers/md/bcache/Kconfig
+
+212 S md-raid5-percpu-handling-rt-aware.patch
+
+	patching file drivers/md/raid5.c
+	patching file drivers/md/raid5.h
+
+213 S mfd-syscon-atmel-smc-include-string.h.patch
+
+	patching file drivers/mfd/atmel-smc.c
+
+214 S mips-disable-highmem-on-rt.patch
+
+	patching file arch/mips/Kconfig
+	Hunk #1 succeeded at 2521 (offset 5 lines).
+
+215 S mmci-remove-bogus-irq-save.patch
+
+	patching file drivers/mmc/host/mmci.c
+
+216 S mm-convert-swap-to-percpu-locked.patch
+
+	patching file include/linux/swap.h
+	Hunk #1 succeeded at 322 (offset -2 lines).
+	patching file mm/compaction.c
+	patching file mm/page_alloc.c
+	Hunk #1 succeeded at 7035 (offset 70 lines).
+	patching file mm/swap.c
+
+217 S mm-disable-sloub-rt.patch
+
+	patching file init/Kconfig
+	Hunk #1 succeeded at 1543 (offset -1 lines).
+	Hunk #2 succeeded at 1564 (offset -1 lines).
+
+218 S mm-enable-slub.patch
+
+	patching file mm/slab.h
+	Hunk #1 succeeded at 453 (offset 1 line).
+	patching file mm/slub.c
+	Hunk #1 succeeded at 1184 (offset 1 line).
+	Hunk #2 succeeded at 1219 (offset 1 line).
+	Hunk #3 succeeded at 1347 (offset 1 line).
+	Hunk #4 succeeded at 1590 (offset 16 lines).
+	Hunk #5 succeeded at 1653 (offset 16 lines).
+	Hunk #6 succeeded at 1715 (offset 16 lines).
+	Hunk #7 succeeded at 1756 (offset 16 lines).
+	Hunk #8 succeeded at 1869 (offset 16 lines).
+	Hunk #9 succeeded at 1894 (offset 16 lines).
+	Hunk #10 succeeded at 2140 (offset 16 lines).
+	Hunk #11 succeeded at 2151 (offset 16 lines).
+	Hunk #12 succeeded at 2186 (offset 16 lines).
+	Hunk #13 succeeded at 2221 (offset 16 lines).
+	Hunk #14 succeeded at 2253 (offset 16 lines).
+	Hunk #15 succeeded at 2290 (offset 16 lines).
+	Hunk #16 succeeded at 2374 (offset 16 lines).
+	Hunk #17 succeeded at 2444 (offset 16 lines).
+	Hunk #18 succeeded at 2585 (offset 16 lines).
+	Hunk #19 succeeded at 2644 (offset 16 lines).
+	Hunk #20 succeeded at 2666 (offset 16 lines).
+	Hunk #21 succeeded at 2679 (offset 16 lines).
+	Hunk #22 succeeded at 2691 (offset 16 lines).
+	Hunk #23 succeeded at 2703 (offset 16 lines).
+	Hunk #24 succeeded at 2891 (offset 16 lines).
+	Hunk #25 succeeded at 2923 (offset 16 lines).
+	Hunk #26 succeeded at 2965 (offset 16 lines).
+	Hunk #27 succeeded at 2980 (offset 16 lines).
+	Hunk #28 succeeded at 3183 (offset 14 lines).
+	Hunk #29 succeeded at 3207 (offset 14 lines).
+	Hunk #30 succeeded at 3219 (offset 14 lines).
+	Hunk #31 succeeded at 3234 (offset 14 lines).
+	Hunk #32 succeeded at 3370 (offset 16 lines).
+	Hunk #33 succeeded at 3724 (offset 16 lines).
+	Hunk #34 succeeded at 3748 (offset 16 lines).
+	Hunk #35 succeeded at 3762 (offset 16 lines).
+	Hunk #36 succeeded at 3772 (offset 16 lines).
+	Hunk #37 succeeded at 4045 (offset 27 lines).
+	Hunk #38 succeeded at 4076 (offset 27 lines).
+	Hunk #39 succeeded at 4289 (offset 27 lines).
+	Hunk #40 succeeded at 4502 (offset 26 lines).
+	Hunk #41 succeeded at 4524 (offset 26 lines).
+	Hunk #42 succeeded at 4712 (offset 26 lines).
+
+219 S mm-make-vmstat-rt-aware.patch
+
+	patching file include/linux/vmstat.h
+	Hunk #1 succeeded at 54 (offset 11 lines).
+	Hunk #2 succeeded at 66 (offset 11 lines).
+	patching file mm/vmstat.c
+
+220 S mm-memcontrol-do_not_disable_irq.patch
+
+	patching file mm/memcontrol.c
+	Hunk #4 succeeded at 5498 (offset 4 lines).
+	Hunk #5 succeeded at 5570 (offset 4 lines).
+	Hunk #6 succeeded at 5578 (offset 4 lines).
+	Hunk #7 succeeded at 5741 (offset 4 lines).
+	Hunk #8 succeeded at 5936 (offset 4 lines).
+	Hunk #9 succeeded at 5982 with fuzz 2 (offset 4 lines).
+
+221 S mm-memcontrol-Don-t-call-schedule_work_on-in-preempt.patch
+
+	patching file mm/memcontrol.c
+	Hunk #1 succeeded at 1786 (offset -45 lines).
+	Hunk #2 succeeded at 1806 (offset -45 lines).
+
+222 F mm-page_alloc-reduce-lock-sections-further.patch
+
+	patching file mm/page_alloc.c
+	Hunk #1 succeeded at 1070 with fuzz 1 (offset -43 lines).
+	Hunk #2 FAILED at 1123.
+	Hunk #3 succeeded at 1104 (offset -44 lines).
+	Hunk #4 FAILED at 1156.
+	Hunk #5 succeeded at 1162 (offset -22 lines).
+	Hunk #6 FAILED at 2428.
+	Hunk #7 FAILED at 2453.
+	Hunk #8 succeeded at 2742 (offset 77 lines).
+	Hunk #9 FAILED at 2695.
+	Hunk #10 FAILED at 2707.
+	Hunk #11 succeeded at 2799 (offset 76 lines).
+	Hunk #12 FAILED at 2740.
+	7 out of 12 hunks FAILED -- saving rejects to file mm/page_alloc.c.rej
+
+223 F mm-page_alloc-rt-friendly-per-cpu-pages.patch
+
+	patching file mm/page_alloc.c
+	Hunk #1 succeeded at 61 (offset -1 lines).
+	Hunk #2 succeeded at 292 (offset 2 lines).
+	Hunk #3 succeeded at 1264 (offset -14 lines).
+	Hunk #4 FAILED at 2428.
+	Hunk #5 succeeded at 2556 (offset 104 lines).
+	Hunk #6 succeeded at 2844 with fuzz 2 (offset 384 lines).
+	Hunk #7 FAILED at 2495.
+	Hunk #8 succeeded at 2916 with fuzz 2 (offset 408 lines).
+	Hunk #9 FAILED at 2575.
+	Hunk #10 FAILED at 2583.
+	Hunk #11 FAILED at 2699.
+	Hunk #12 FAILED at 2721.
+	Hunk #13 FAILED at 2734.
+	Hunk #14 succeeded at 2979 (offset 106 lines).
+	Hunk #15 succeeded at 2987 (offset 106 lines).
+	Hunk #16 succeeded at 3014 (offset 106 lines).
+	Hunk #17 succeeded at 3034 (offset 106 lines).
+	Hunk #18 succeeded at 7977 (offset 169 lines).
+	Hunk #19 succeeded at 7986 (offset 169 lines).
+	7 out of 19 hunks FAILED -- saving rejects to file mm/page_alloc.c.rej
+
+224 S mm-page-alloc-use-local-lock-on-target-cpu.patch
+
+	patching file mm/page_alloc.c
+	Hunk #1 succeeded at 296 (offset 2 lines).
+
+225 S mm-perform-lru_add_drain_all-remotely.patch
+
+	patching file mm/swap.c
+
+226 S mm-protect-activate-switch-mm.patch
+
+	patching file fs/exec.c
+	Hunk #1 succeeded at 1029 (offset 5 lines).
+	patching file mm/mmu_context.c
+
+227 S mm--rt--Fix-generic-kmap_atomic-for-RT.patch
+
+	patching file include/linux/highmem.h
+	Hunk #1 succeeded at 67 (offset 1 line).
+	Hunk #2 succeeded at 76 (offset 1 line).
+
+228 S mm-rt-kmap-atomic-scheduling.patch
+
+	patching file arch/x86/kernel/process_32.c
+	patching file arch/x86/mm/highmem_32.c
+	patching file arch/x86/mm/iomap_32.c
+	Hunk #1 succeeded at 59 (offset 3 lines).
+	Hunk #2 succeeded at 69 (offset 3 lines).
+	Hunk #3 succeeded at 123 (offset 6 lines).
+	patching file include/linux/highmem.h
+	Hunk #1 succeeded at 88 (offset 1 line).
+	patching file include/linux/sched.h
+	Hunk #2 succeeded at 1148 with fuzz 2 (offset 34 lines).
+	patching file include/linux/uaccess.h
+	patching file mm/highmem.c
+
+229 S mm-scatterlist-dont-disable-irqs-on-RT.patch
+
+	patching file lib/scatterlist.c
+	Hunk #1 succeeded at 781 (offset -7 lines).
+
+230 S mm-vmalloc-use-get-cpu-light.patch
+
+	patching file mm/vmalloc.c
+
+231 F mm-workingset-do-not-protect-workingset_shadow_nodes.patch
+
+	patching file include/linux/swap.h
+	patching file mm/filemap.c
+	Hunk #2 FAILED at 134.
+	Hunk #3 succeeded at 153 (offset 1 line).
+	Hunk #4 FAILED at 164.
+	Hunk #5 succeeded at 332 with fuzz 2 (offset 1 line).
+	Hunk #6 FAILED at 362.
+	3 out of 6 hunks FAILED -- saving rejects to file mm/filemap.c.rej
+	patching file mm/truncate.c
+	Hunk #1 FAILED at 40.
+	1 out of 1 hunk FAILED -- saving rejects to file mm/truncate.c.rej
+	patching file mm/workingset.c
+	Hunk #3 FAILED at 368.
+	Hunk #4 FAILED at 470.
+	Hunk #5 FAILED at 489.
+	3 out of 7 hunks FAILED -- saving rejects to file mm/workingset.c.rej
+
+232 S mm_zsmalloc_copy_with_get_cpu_var_and_locking.patch
+
+	patching file mm/zsmalloc.c
+	Hunk #3 succeeded at 334 (offset 2 lines).
+	Hunk #4 succeeded at 358 (offset 2 lines).
+	Hunk #5 succeeded at 397 (offset 2 lines).
+	Hunk #6 succeeded at 490 (offset 2 lines).
+	Hunk #7 succeeded at 919 (offset -8 lines).
+	Hunk #8 succeeded at 939 (offset -8 lines).
+	Hunk #9 succeeded at 1417 (offset -7 lines).
+	Hunk #10 succeeded at 1471 (offset -7 lines).
+
+233 S mutex-no-spin-on-rt.patch
+
+	patching file kernel/Kconfig.locks
+
+234 F net-3com-3c59x-irq-save-variant-of-ISR.patch
+
+	patching file drivers/net/ethernet/3com/3c59x.c
+	Hunk #1 FAILED at 839.
+	Hunk #2 FAILED at 1903.
+	Hunk #3 FAILED at 2515.
+	3 out of 3 hunks FAILED -- saving rejects to file drivers/net/ethernet/3com/3c59x.c.rej
+
+235 S net-3com-3c59x-Move-boomerang-vortex-conditional-int.patch
+
+	patching file drivers/net/ethernet/3com/3c59x.c
+
+236 S net-3com-3c59x-Pull-locking-out-of-ISR.patch
+
+	patching file drivers/net/ethernet/3com/3c59x.c
+
+237 S net-add-a-lock-around-icmp_sk.patch
+
+	patching file net/ipv4/icmp.c
+
+238 S net-add-back-the-missing-serialization-in-ip_send_un.patch
+
+	patching file net/ipv4/tcp_ipv4.c
+	Hunk #2 succeeded at 591 (offset 8 lines).
+	Hunk #3 succeeded at 724 (offset 8 lines).
+	Hunk #4 succeeded at 734 (offset 8 lines).
+	Hunk #5 succeeded at 812 (offset 8 lines).
+	Hunk #6 succeeded at 821 (offset 8 lines).
+
+239 S net-another-local-irq-disable-alloc-atomic-headache.patch
+
+	patching file net/core/skbuff.c
+
+240 S net-core-cpuhotplug-drain-input_pkt_queue-lockless.patch
+
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 8744 (offset 39 lines).
+
+241 S net-core-protect-users-of-napi_alloc_cache-against-r.patch
+
+	patching file net/core/skbuff.c
+
+242 S net-core-use-local_bh_disable-in-netif_rx_ni.patch
+
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 4213 (offset 24 lines).
+
+243 S net-dev-always-take-qdisc-s-busylock-in-__dev_xmit_s.patch
+
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 3255 (offset 25 lines).
+
+244 S net_disable_NET_RX_BUSY_POLL.patch
+
+	patching file net/Kconfig
+
+245 S net-fix-iptable-xt-write-recseq-begin-rt-fallout.patch
+
+	patching file include/linux/netfilter/x_tables.h
+	Hunk #2 succeeded at 346 (offset 2 lines).
+	Hunk #3 succeeded at 368 (offset 2 lines).
+	Hunk #4 succeeded at 401 (offset 2 lines).
+	patching file net/netfilter/core.c
+
+246 S net-Have-__napi_schedule_irqoff-disable-interrupts-o.patch
+
+	patching file include/linux/netdevice.h
+	Hunk #1 succeeded at 411 (offset 1 line).
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 5418 (offset 14 lines).
+	Hunk #2 succeeded at 5430 (offset 14 lines).
+
+247 S net-make-devnet_rename_seq-a-mutex.patch
+
+	patching file net/core/dev.c
+
+248 S net-move-xmit_recursion-to-per-task-variable-on-RT.patch
+
+	patching file include/linux/netdevice.h
+	Hunk #1 succeeded at 2512 (offset 33 lines).
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 1157 (offset 41 lines).
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 3337 (offset 35 lines).
+	Hunk #2 succeeded at 3581 (offset 35 lines).
+	Hunk #3 succeeded at 3591 (offset 35 lines).
+	patching file net/core/filter.c
+	Hunk #1 succeeded at 1712 (offset 8 lines).
+	Hunk #2 succeeded at 1720 (offset 8 lines).
+
+249 S net-provide-a-way-to-delegate-processing-a-softirq-t.patch
+
+	patching file include/linux/interrupt.h
+	Hunk #1 succeeded at 513 (offset -6 lines).
+	patching file kernel/softirq.c
+	Hunk #1 succeeded at 410 with fuzz 1 (offset -277 lines).
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 5828 (offset 19 lines).
+
+250 S net-Qdisc-use-a-seqlock-instead-seqcount.patch
+
+	patching file include/linux/seqlock.h
+	Hunk #1 succeeded at 449 with fuzz 1 (offset -33 lines).
+	patching file include/net/gen_stats.h
+	patching file include/net/net_seq_lock.h
+	patching file include/net/sch_generic.h
+	patching file net/core/gen_estimator.c
+	patching file net/core/gen_stats.c
+	patching file net/sched/sch_api.c
+	Hunk #1 succeeded at 1159 (offset 5 lines).
+	patching file net/sched/sch_generic.c
+
+251 S net-sched-dev_deactivate_many-use-msleep-1-instead-o.patch
+
+	patching file net/sched/sch_generic.c
+	Hunk #1 succeeded at 1201 (offset 12 lines).
+
+252 S net-take-the-tcp_sk_lock-lock-with-BH-disabled.patch
+
+	patching file net/ipv4/tcp_ipv4.c
+	Hunk #1 succeeded at 724 (offset 8 lines).
+	Hunk #2 succeeded at 733 (offset 8 lines).
+	Hunk #3 succeeded at 812 (offset 8 lines).
+
+253 S net-use-cpu-chill.patch
+
+	patching file net/packet/af_packet.c
+	patching file net/rds/ib_rdma.c
+
+254 S net-use-task_struct-instead-of-CPU-number-as-the-que.patch
+
+	patching file include/linux/netdevice.h
+	Hunk #1 succeeded at 585 (offset 13 lines).
+	Hunk #2 succeeded at 3632 (offset 32 lines).
+	Hunk #3 succeeded at 3690 (offset 32 lines).
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 3580 (offset 35 lines).
+	Hunk #2 succeeded at 7817 (offset 54 lines).
+
+255 S net-use-trylock-in-icmp_sk.patch
+
+	patching file net/ipv4/icmp.c
+
+256 S NFSv4-replace-seqcount_t-with-a-seqlock_t.patch
+
+	patching file fs/nfs/delegation.c
+	Hunk #1 succeeded at 152 (offset 1 line).
+	patching file fs/nfs/nfs4_fs.h
+	patching file fs/nfs/nfs4proc.c
+	Hunk #1 succeeded at 2798 (offset 20 lines).
+	Hunk #2 succeeded at 2836 (offset 20 lines).
+	patching file fs/nfs/nfs4state.c
+	Hunk #1 succeeded at 503 (offset 1 line).
+	Hunk #2 succeeded at 1552 (offset -2 lines).
+	Hunk #3 succeeded at 1626 (offset -2 lines).
+
+257 S nohz-Prevent-erroneous-tick-stop-invocations.patch
+
+	patching file kernel/softirq.c
+
+258 S ntfs-avoid-disabling-interrupts-during-kmap_atomic.patch
+
+	patching file fs/ntfs/aops.c
+	Hunk #2 succeeded at 142 (offset -2 lines).
+
+259 S oleg-signal-rt-fix.patch
+
+	patching file arch/x86/entry/common.c
+	patching file arch/x86/include/asm/signal.h
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 868 (offset 63 lines).
+	patching file kernel/signal.c
+
+260 S panic-disable-random-on-rt.patch
+
+	patching file kernel/panic.c
+	Hunk #1 succeeded at 475 (offset -11 lines).
+
+261 F patch-to-introduce-rcu-bh-qs-where-safe-from-softirq.patch
+
+	patching file include/linux/rcupdate.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/rcupdate.h.rej
+	patching file kernel/rcu/tree.c
+	Hunk #1 FAILED at 243.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/rcu/tree.c.rej
+	patching file kernel/rcu/tree_plugin.h
+	Hunk #2 succeeded at 1298 (offset -2 lines).
+	Hunk #3 succeeded at 1314 (offset -2 lines).
+	Hunk #4 succeeded at 1412 (offset -2 lines).
+	Hunk #5 succeeded at 1456 (offset -2 lines).
+
+262 S pci-switchtec-Don-t-use-completion-s-wait-queue.patch
+
+	patching file drivers/pci/switch/switchtec.c
+
+263 S percpu_ida-Use-_irqsave-instead-of-local_irq_save-sp.patch
+
+	patching file lib/percpu_ida.c
+
+264 S peter_zijlstra-frob-rcu.patch
+
+	patching file kernel/rcu/tree_plugin.h
+	Hunk #1 succeeded at 465 (offset -3 lines).
+
+265 S peterz-percpu-rwsem-rt.patch
+
+	patching file fs/locks.c
+	patching file include/linux/percpu-rwsem.h
+
+266 S peterz-srcu-crypto-chain.patch
+
+	patching file crypto/algapi.c
+	Hunk #1 succeeded at 718 (offset -8 lines).
+	patching file crypto/api.c
+	Hunk #2 succeeded at 251 (offset 14 lines).
+	patching file crypto/internal.h
+	Hunk #2 succeeded at 138 (offset -1 lines).
+
+267 S pid.h-include-atomic.h.patch
+
+	patching file include/linux/pid.h
+
+268 S posix-cpu-timers-remove-lockdep_assert_irqs_disabled.patch
+
+	patching file kernel/time/posix-cpu-timers.c
+
+269 S posix-timers-move-the-rcu-head-out-of-the-union.patch
+
+	patching file include/linux/posix-timers.h
+	patching file kernel/time/posix-timers.c
+	Hunk #1 succeeded at 469 (offset -2 lines).
+	Hunk #2 succeeded at 486 (offset -2 lines).
+
+270 S posix-timers-no-broadcast.patch
+
+	patching file kernel/time/posix-timers.c
+
+271 S posix-timers-thread-posix-cpu-timers-on-rt.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 820 (offset 63 lines).
+	patching file init/init_task.c
+	patching file kernel/fork.c
+	Hunk #1 succeeded at 1540 (offset 11 lines).
+	patching file kernel/time/posix-cpu-timers.c
+
+272 S power-disable-highmem-on-rt.patch
+
+	patching file arch/powerpc/Kconfig
+	Hunk #1 succeeded at 393 (offset -1 lines).
+
+273 S powerpc-kvm-Disable-in-kernel-MPIC-emulation-for-PRE.patch
+
+	patching file arch/powerpc/kvm/Kconfig
+
+274 S powerpc-preempt-lazy-support.patch
+
+	patching file arch/powerpc/Kconfig
+	Hunk #1 succeeded at 218 (offset -1 lines).
+	patching file arch/powerpc/include/asm/thread_info.h
+	Hunk #2 succeeded at 81 (offset 1 line).
+	Hunk #3 succeeded at 100 (offset 1 line).
+	Hunk #4 succeeded at 121 (offset 1 line).
+	patching file arch/powerpc/kernel/asm-offsets.c
+	patching file arch/powerpc/kernel/entry_32.S
+	patching file arch/powerpc/kernel/entry_64.S
+
+275 S powerpc-ps3-device-init.c-adapt-to-completions-using.patch
+
+	patching file arch/powerpc/platforms/ps3/device-init.c
+
+276 S power-use-generic-rwsem-on-rt.patch
+
+	patching file arch/powerpc/Kconfig
+
+277 F preempt-lazy-support.patch
+
+	patching file include/linux/preempt.h
+	Hunk #1 succeeded at 171 (offset -9 lines).
+	Hunk #2 succeeded at 193 (offset -9 lines).
+	Hunk #3 succeeded at 246 (offset -24 lines).
+	Hunk #4 succeeded at 260 (offset -24 lines).
+	Hunk #5 succeeded at 331 (offset -25 lines).
+	patching file include/linux/sched.h
+	Hunk #1 FAILED at 1636.
+	1 out of 1 hunk FAILED -- saving rejects to file include/linux/sched.h.rej
+	patching file include/linux/thread_info.h
+	Hunk #1 succeeded at 86 (offset -4 lines).
+	patching file include/linux/trace_events.h
+	patching file kernel/Kconfig.preempt
+	Hunk #1 FAILED at 6.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/Kconfig.preempt.rej
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 479 (offset -42 lines).
+	Hunk #2 succeeded at 2478 (offset -20 lines).
+	Hunk #3 succeeded at 3556 (offset 73 lines).
+	Hunk #4 succeeded at 3716 (offset 43 lines).
+	Hunk #5 succeeded at 3754 (offset 43 lines).
+	Hunk #6 succeeded at 3782 (offset 43 lines).
+	Hunk #7 succeeded at 5552 (offset 47 lines).
+	Hunk #8 FAILED at 7227.
+	Hunk #9 FAILED at 7294.
+	Hunk #10 FAILED at 7302.
+	3 out of 10 hunks FAILED -- saving rejects to file kernel/sched/core.c.rej
+	patching file kernel/sched/fair.c
+	Hunk #1 succeeded at 4303 (offset 140 lines).
+	Hunk #2 succeeded at 4327 (offset 140 lines).
+	Hunk #3 succeeded at 4469 (offset 140 lines).
+	Hunk #4 succeeded at 4651 (offset 140 lines).
+	Hunk #5 succeeded at 5300 (offset 140 lines).
+	Hunk #6 succeeded at 6840 (offset 220 lines).
+	Hunk #7 succeeded at 9926 (offset 441 lines).
+	Hunk #8 succeeded at 9950 (offset 441 lines).
+	patching file kernel/sched/features.h
+	Hunk #1 FAILED at 48.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/sched/features.h.rej
+	patching file kernel/sched/sched.h
+	Hunk #1 succeeded at 1599 (offset 43 lines).
+	patching file kernel/trace/trace.c
+	Hunk #1 succeeded at 2130 (offset 1 line).
+	Hunk #2 succeeded at 2141 (offset 1 line).
+	Hunk #3 succeeded at 3339 (offset 1 line).
+	Hunk #4 succeeded at 3385 (offset 1 line).
+	patching file kernel/trace/trace.h
+	patching file kernel/trace/trace_output.c
+
+278 S preempt-nort-rt-variants.patch
+
+	patching file include/linux/preempt.h
+	Hunk #1 succeeded at 205 (offset 24 lines).
+	Hunk #2 succeeded at 339 (offset 37 lines).
+
+279 F printk-27force_early_printk-27-boot-param-to-help-with-debugging.patch
+
+	patching file kernel/printk/printk.c
+	Hunk #1 FAILED at 434.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/printk/printk.c.rej
+
+280 S printk-kill.patch
+
+	patching file include/linux/printk.h
+	patching file kernel/printk/printk.c
+	Hunk #2 succeeded at 1915 (offset 27 lines).
+	Hunk #3 succeeded at 2102 (offset 27 lines).
+	patching file kernel/watchdog_hld.c
+
+281 S printk-rt-aware.patch
+
+	patching file kernel/printk/printk.c
+	Hunk #1 succeeded at 1626 (offset 20 lines).
+	Hunk #2 succeeded at 1767 (offset 20 lines).
+	Hunk #3 succeeded at 1791 (offset 20 lines).
+	Hunk #4 succeeded at 1807 (offset 20 lines).
+	Hunk #5 succeeded at 1990 (offset 20 lines).
+	Hunk #6 succeeded at 2472 (offset 20 lines).
+	Hunk #7 succeeded at 2494 (offset 20 lines).
+	Hunk #8 succeeded at 2524 (offset 20 lines).
+
+282 S ptrace-fix-ptrace-vs-tasklist_lock-race.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 101 (offset 1 line).
+	Hunk #2 succeeded at 1670 (offset 54 lines).
+	patching file kernel/ptrace.c
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 1384 (offset 14 lines).
+	Hunk #2 succeeded at 1440 (offset 14 lines).
+	Hunk #3 succeeded at 1455 (offset 14 lines).
+
+283 S radix-tree-use-local-locks.patch
+
+	patching file include/linux/idr.h
+	Hunk #1 succeeded at 158 (offset 2 lines).
+	patching file include/linux/radix-tree.h
+	Hunk #1 succeeded at 330 (offset 4 lines).
+	Hunk #2 succeeded at 351 (offset 4 lines).
+	patching file lib/radix-tree.c
+	Hunk #8 succeeded at 2110 (offset 2 lines).
+	Hunk #9 succeeded at 2136 (offset 2 lines).
+
+284 S random-avoid-preempt_disable-ed-section.patch
+
+	patching file drivers/char/random.c
+
+285 S random-make-it-work-on-rt.patch
+
+	patching file drivers/char/random.c
+	patching file drivers/hv/vmbus_drv.c
+	Hunk #1 succeeded at 972 (offset -1 lines).
+	Hunk #2 succeeded at 1017 (offset -1 lines).
+	patching file include/linux/irqdesc.h
+	patching file include/linux/random.h
+	patching file kernel/irq/handle.c
+	Hunk #1 succeeded at 185 (offset 2 lines).
+	patching file kernel/irq/manage.c
+	Hunk #1 succeeded at 1032 (offset 3 lines).
+
+286 I rbtree-include-rcu.h-because-we-use-it.patch
+
+	patching file include/linux/rbtree_augmented.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/rbtree_augmented.h.rej
+	patching file include/linux/rbtree_latch.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/rbtree_latch.h.rej
+
+287 S rcu-disable-rcu-fast-no-hz-on-rt.patch
+
+	patching file kernel/rcu/Kconfig
+
+288 S rcu-Eliminate-softirq-processing-from-rcutree.patch
+
+	patching file kernel/rcu/tree.c
+	Hunk #2 succeeded at 2910 (offset -31 lines).
+	Hunk #3 succeeded at 2932 (offset -31 lines).
+	Hunk #4 succeeded at 4275 (offset -56 lines).
+	patching file kernel/rcu/tree.h
+	Hunk #1 succeeded at 410 (offset -32 lines).
+	Hunk #2 succeeded at 433 (offset -32 lines).
+	patching file kernel/rcu/tree_plugin.h
+	Hunk #2 succeeded at 660 (offset 2 lines).
+	Hunk #3 succeeded at 882 (offset 2 lines).
+	Hunk #4 succeeded at 1035 (offset -2 lines).
+	Hunk #5 succeeded at 1088 (offset -2 lines).
+	Hunk #6 succeeded at 1118 (offset -2 lines).
+	Hunk #7 succeeded at 1146 (offset -2 lines).
+
+289 S rcu-enable-rcu_normal_after_boot-by-default-for-RT.patch
+
+	patching file kernel/rcu/update.c
+
+290 S rcu-make-RCU_BOOST-default-on-RT.patch
+
+	patching file kernel/rcu/Kconfig
+
+291 F rcu-merge-rcu-bh-into-rcu-preempt-for-rt.patch
+
+	patching file include/linux/rcupdate.h
+	Hunk #1 succeeded at 55 (offset -1 lines).
+	Hunk #2 succeeded at 109 (offset -8 lines).
+	Hunk #3 succeeded at 265 (offset -6 lines).
+	Hunk #4 succeeded at 723 (offset 42 lines).
+	Hunk #5 succeeded at 740 (offset 42 lines).
+	patching file include/linux/rcutree.h
+	patching file kernel/rcu/rcu.h
+	Hunk #1 FAILED at 458.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/rcu/rcu.h.rej
+	patching file kernel/rcu/rcutorture.c
+	patching file kernel/rcu/tree.c
+	Hunk #1 succeeded at 250 (offset 7 lines).
+	Hunk #2 succeeded at 261 (offset 7 lines).
+	Hunk #3 succeeded at 560 (offset 7 lines).
+	Hunk #4 succeeded at 586 (offset 7 lines).
+	Hunk #5 succeeded at 595 (offset 7 lines).
+	Hunk #6 succeeded at 619 (offset 7 lines).
+	Hunk #7 succeeded at 638 (offset 7 lines).
+	Hunk #8 succeeded at 695 (offset 7 lines).
+	Hunk #9 succeeded at 3207 (offset 90 lines).
+	Hunk #10 succeeded at 3235 (offset 90 lines).
+	Hunk #11 succeeded at 3321 (offset 90 lines).
+	Hunk #12 succeeded at 3348 (offset 90 lines).
+	Hunk #13 succeeded at 3680 (offset 71 lines).
+	Hunk #14 succeeded at 3689 (offset 71 lines).
+	Hunk #15 succeeded at 4292 (offset 69 lines).
+	patching file kernel/rcu/tree.h
+	Hunk #1 succeeded at 401 (offset -30 lines).
+	patching file kernel/rcu/update.c
+
+292 F RCU-skip-the-schedule-in-RCU-section-warning-on-UP-t.patch
+
+	patching file include/linux/preempt.h
+	Hunk #1 succeeded at 220 (offset 9 lines).
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 1156 with fuzz 2 (offset 552 lines).
+	patching file kernel/rcu/tree_plugin.h
+	Hunk #1 FAILED at 328.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/rcu/tree_plugin.h.rej
+	patching file kernel/sched/core.c
+	Hunk #1 FAILED at 7283.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/sched/core.c.rej
+
+293 F rcutree-rcu_bh_qs-disable-irq-while-calling-rcu_pree.patch
+
+	patching file kernel/rcu/tree.c
+	Hunk #1 FAILED at 248.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/rcu/tree.c.rej
+
+294 S RCU-we-need-to-skip-that-warning-but-only-on-sleepin.patch
+
+	patching file kernel/rcu/tree_plugin.h
+	Hunk #1 succeeded at 300 (offset -25 lines).
+
+295 S re-preempt_rt_full-arm-coredump-fails-for-cpu-3e-3d-4.patch
+
+	patching file arch/arm/kernel/process.c
+
+296 S Revert-mm-vmstat.c-fix-vmstat_update-preemption-BUG.patch
+
+	patching file mm/vmstat.c
+	Hunk #1 succeeded at 1856 (offset 17 lines).
+
+297 F Revert-timer-delay-waking-softirqs-from-the-jiffy-ti.patch
+
+	patching file kernel/time/timer.c
+	Hunk #1 FAILED at 1666.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/time/timer.c.rej
+
+298 S rfc-arm-smp-__cpu_disable-fix-sleeping-function-called-from-invalid-context.patch
+
+	patching file arch/arm/kernel/smp.c
+
+299 F rt-Increase-decrease-the-nr-of-migratory-tasks-when-.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 FAILED at 7114.
+	Hunk #2 FAILED at 7137.
+	Hunk #3 FAILED at 7172.
+	3 out of 3 hunks FAILED -- saving rejects to file kernel/sched/core.c.rej
+
+300 S rt-introduce-cpu-chill.patch
+
+	patching file include/linux/delay.h
+	patching file kernel/time/hrtimer.c
+	Hunk #1 succeeded at 1883 (offset 41 lines).
+
+301 S rt-local-irq-lock.patch
+
+	patching file include/linux/locallock.h
+	patching file include/linux/percpu.h
+
+302 S rtmutex-add-mutex-implementation-based-on-rtmutex.patch
+
+	patching file include/linux/mutex_rt.h
+	patching file kernel/locking/mutex-rt.c
+
+303 S rtmutex-add-rwlock-implementation-based-on-rtmutex.patch
+
+	patching file include/linux/rwlock_rt.h
+	patching file include/linux/rwlock_types_rt.h
+	patching file kernel/locking/rwlock-rt.c
+
+304 S rtmutex-add-rwsem-implementation-based-on-rtmutex.patch
+
+	patching file include/linux/rwsem_rt.h
+	patching file kernel/locking/rwsem-rt.c
+
+305 F rtmutex-add-sleeping-lock-implementation.patch
+
+	patching file include/linux/kernel.h
+	patching file include/linux/rtmutex.h
+	Hunk #1 FAILED at 14.
+	1 out of 3 hunks FAILED -- saving rejects to file include/linux/rtmutex.h.rej
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 130 (offset -3 lines).
+	Hunk #2 succeeded at 195 (offset -3 lines).
+	Hunk #3 succeeded at 910 (offset 17 lines).
+	patching file include/linux/sched/wake_q.h
+	patching file include/linux/spinlock_rt.h
+	patching file include/linux/spinlock_types_rt.h
+	patching file kernel/fork.c
+	Hunk #1 succeeded at 837 (offset -25 lines).
+	patching file kernel/futex.c
+	Hunk #3 succeeded at 2784 (offset -10 lines).
+	Hunk #4 succeeded at 3156 (offset -10 lines).
+	patching file kernel/locking/rtmutex.c
+	Hunk #2 succeeded at 233 (offset -6 lines).
+	Hunk #3 succeeded at 273 (offset -6 lines).
+	Hunk #4 succeeded at 398 (offset -6 lines).
+	Hunk #5 succeeded at 730 (offset -7 lines).
+	Hunk #6 succeeded at 841 (offset -7 lines).
+	Hunk #7 succeeded at 881 (offset -7 lines).
+	Hunk #8 succeeded at 903 (offset -7 lines).
+	Hunk #9 succeeded at 955 (offset -7 lines).
+	Hunk #10 succeeded at 1342 (offset -23 lines).
+	Hunk #11 succeeded at 1382 (offset -23 lines).
+	Hunk #12 succeeded at 1467 (offset -25 lines).
+	Hunk #13 succeeded at 1567 (offset -57 lines).
+	Hunk #14 succeeded at 1668 (offset -29 lines).
+	Hunk #15 succeeded at 1723 (offset -29 lines).
+	Hunk #16 succeeded at 1775 (offset -29 lines).
+	Hunk #17 succeeded at 1788 with fuzz 1 (offset -29 lines).
+	Hunk #18 succeeded at 1917 (offset -70 lines).
+	Hunk #19 succeeded at 1940 (offset -70 lines).
+	Hunk #20 succeeded at 2007 (offset -70 lines).
+	Hunk #21 succeeded at 2184 (offset -62 lines).
+	Hunk #22 succeeded at 2196 (offset -62 lines).
+	patching file kernel/locking/rtmutex_common.h
+	Hunk #3 succeeded at 137 (offset -3 lines).
+	Hunk #4 FAILED at 158.
+	Hunk #5 FAILED at 170.
+	2 out of 5 hunks FAILED -- saving rejects to file kernel/locking/rtmutex_common.h.rej
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 402 (offset -30 lines).
+	Hunk #2 succeeded at 432 (offset -30 lines).
+
+306 F rtmutex-add-ww_mutex-addon-for-mutex-rt.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #2 succeeded at 1239 (offset -7 lines).
+	Hunk #3 succeeded at 1533 (offset -25 lines).
+	Hunk #4 succeeded at 1557 with fuzz 1 (offset -20 lines).
+	Hunk #5 FAILED at 1617.
+	Hunk #6 FAILED at 1636.
+	Hunk #7 succeeded at 1603 (offset -57 lines).
+	Hunk #8 FAILED at 1679.
+	Hunk #9 succeeded at 1780 (offset -29 lines).
+	Hunk #10 succeeded at 1922 (offset -56 lines).
+	Hunk #11 succeeded at 2238 (offset -62 lines).
+	Hunk #12 succeeded at 2322 (offset -62 lines).
+	3 out of 12 hunks FAILED -- saving rejects to file kernel/locking/rtmutex.c.rej
+	patching file kernel/locking/rtmutex_common.h
+	Hunk #1 FAILED at 165.
+	Hunk #2 FAILED at 172.
+	2 out of 2 hunks FAILED -- saving rejects to file kernel/locking/rtmutex_common.h.rej
+	patching file kernel/locking/rwsem-rt.c
+
+307 F rtmutex-annotate-sleeping-lock-context.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 664 with fuzz 2 (offset 53 lines).
+	Hunk #2 succeeded at 1804 (offset 70 lines).
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 1133 (offset -8 lines).
+	Hunk #2 succeeded at 1148 (offset -8 lines).
+	Hunk #3 succeeded at 1162 (offset -8 lines).
+	Hunk #4 succeeded at 1188 (offset -8 lines).
+	Hunk #5 succeeded at 1208 (offset -8 lines).
+	Hunk #6 succeeded at 1224 (offset -8 lines).
+	patching file kernel/locking/rwlock-rt.c
+	patching file kernel/rcu/tree_plugin.h
+	Hunk #1 FAILED at 325.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/rcu/tree_plugin.h.rej
+
+308 S rtmutex-avoid-include-hell.patch
+
+	patching file include/linux/rtmutex.h
+
+309 S rtmutex_dont_include_rcu.patch
+
+	patching file include/linux/rbtree.h
+	patching file include/linux/rcu_assign_pointer.h
+	patching file include/linux/rcupdate.h
+	Hunk #2 succeeded at 383 (offset 10 lines).
+
+310 F rtmutex-export-lockdep-less-version-of-rt_mutex-s-lo.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 1856 with fuzz 1 (offset 362 lines).
+	Hunk #2 succeeded at 1886 (offset 362 lines).
+	Hunk #3 succeeded at 1901 (offset 362 lines).
+	Hunk #4 FAILED at 1565.
+	Hunk #5 succeeded at 1950 (offset 344 lines).
+	Hunk #6 FAILED at 1633.
+	Hunk #7 succeeded at 1988 (offset 340 lines).
+	2 out of 7 hunks FAILED -- saving rejects to file kernel/locking/rtmutex.c.rej
+	patching file kernel/locking/rtmutex_common.h
+	Hunk #1 FAILED at 161.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/locking/rtmutex_common.h.rej
+
+311 S rtmutex-futex-prepare-rt.patch
+
+	patching file kernel/futex.c
+	Hunk #1 succeeded at 2089 (offset 3 lines).
+	Hunk #2 succeeded at 3139 (offset 3 lines).
+	Hunk #3 succeeded at 3197 (offset 3 lines).
+	Hunk #4 succeeded at 3254 (offset 3 lines).
+	Hunk #5 succeeded at 3266 (offset 3 lines).
+	Hunk #6 succeeded at 3280 (offset 3 lines).
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 141 (offset 6 lines).
+	Hunk #2 succeeded at 419 (offset 35 lines).
+	Hunk #3 succeeded at 556 (offset 35 lines).
+	Hunk #4 succeeded at 1326 (offset 369 lines).
+	Hunk #5 succeeded at 1365 (offset 369 lines).
+	Hunk #6 succeeded at 1465 (offset 373 lines).
+	Hunk #7 succeeded at 1491 (offset 373 lines).
+	Hunk #8 succeeded at 1528 (offset 373 lines).
+	patching file kernel/locking/rtmutex_common.h
+	Hunk #1 succeeded at 132 (offset 2 lines).
+
+312 S rtmutex-lock-killable.patch
+
+	patching file include/linux/rtmutex.h
+	Hunk #1 succeeded at 115 (offset 7 lines).
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 1943 (offset 401 lines).
+
+313 S rtmutex-Make-lock_killable-work.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 1575 with fuzz 1 (offset 374 lines).
+
+314 F rtmutex-Provide-rt_mutex_slowlock_locked.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 FAILED at 1244.
+	Hunk #2 succeeded at 1661 (offset 381 lines).
+	Hunk #3 succeeded at 1678 (offset 381 lines).
+	1 out of 3 hunks FAILED -- saving rejects to file kernel/locking/rtmutex.c.rej
+	patching file kernel/locking/rtmutex_common.h
+	Hunk #1 succeeded at 160 (offset 1 line).
+
+315 S rtmutex-trylock-is-okay-on-RT.patch
+
+	patching file kernel/locking/rtmutex.c
+	Hunk #1 succeeded at 2043 (offset 481 lines).
+
+316 F rtmutex-wire-up-RT-s-locking.patch
+
+	patching file include/linux/mutex.h
+	Hunk #1 succeeded at 22 (offset -1 lines).
+	Hunk #2 succeeded at 129 (offset -1 lines).
+	Hunk #3 succeeded at 236 (offset -1 lines).
+	patching file include/linux/rwsem.h
+	Hunk #2 succeeded at 118 (offset 6 lines).
+	patching file include/linux/spinlock.h
+	patching file include/linux/spinlock_api_smp.h
+	patching file include/linux/spinlock_types.h
+	Hunk #1 FAILED at 11.
+	1 out of 1 hunk FAILED -- saving rejects to file include/linux/spinlock_types.h.rej
+	patching file kernel/locking/Makefile
+	patching file kernel/locking/spinlock.c
+	patching file kernel/locking/spinlock_debug.c
+
+317 S rt-preempt-base-config.patch
+
+	patching file kernel/Kconfig.preempt
+	Hunk #3 succeeded at 67 with fuzz 2 (offset 8 lines).
+
+318 S rt-serial-warn-fix.patch
+
+	patching file drivers/tty/serial/8250/8250_core.c
+
+319 I rxrpc-remove-unused-static-variables.patch
+
+	patching file net/rxrpc/security.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file net/rxrpc/security.c.rej
+
+320 S sched-delay-put-task.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 1182 with fuzz 2 (offset 90 lines).
+	patching file include/linux/sched/task.h
+	patching file kernel/fork.c
+	Hunk #1 succeeded at 641 (offset 2 lines).
+	Hunk #2 succeeded at 669 (offset 11 lines).
+
+321 S sched-disable-rt-group-sched-on-rt.patch
+
+	patching file init/Kconfig
+
+322 S sched-disable-ttwu-queue.patch
+
+	patching file kernel/sched/features.h
+
+323 S sched-fair-Fix-CFS-bandwidth-control-lockdep-DEADLOC.patch
+
+	patching file kernel/sched/fair.c
+	Hunk #1 succeeded at 5147 (offset 140 lines).
+
+324 F sched-let-softirq_count-return-0-if-inside-local_bh_.patch
+
+	patching file include/linux/preempt.h
+	Hunk #1 FAILED at 91.
+	1 out of 1 hunk FAILED -- saving rejects to file include/linux/preempt.h.rej
+
+325 S sched-limit-nr-migrate.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 41 (offset -24 lines).
+
+326 S sched-might-sleep-do-not-account-rcu-depth.patch
+
+	patching file include/linux/rcupdate.h
+	Hunk #1 succeeded at 79 (offset 5 lines).
+	Hunk #2 succeeded at 109 (offset 5 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 6261 (offset 123 lines).
+
+327 S sched-mmdrop-delayed.patch
+
+	patching file include/linux/mm_types.h
+	Hunk #2 succeeded at 494 (offset 2 lines).
+	patching file include/linux/sched/mm.h
+	patching file kernel/fork.c
+	Hunk #1 succeeded at 607 (offset 2 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 2839 (offset 70 lines).
+	Hunk #2 succeeded at 5694 (offset 162 lines).
+	Hunk #3 succeeded at 5711 with fuzz 1 (offset 163 lines).
+	Hunk #4 succeeded at 6021 with fuzz 2 (offset 165 lines).
+
+328 F sched-Prevent-task-state-corruption-by-spurious-lock.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 FAILED at 2218.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/sched/core.c.rej
+
+329 I sched-Remove-TASK_ALL.patch
+
+	patching file include/linux/sched.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/linux/sched.h.rej
+
+330 F sched-rt-mutex-wakeup.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 611 (offset 81 lines).
+	Hunk #2 succeeded at 1624 (offset 93 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 2084 (offset 57 lines).
+	Hunk #2 succeeded at 2266 (offset 57 lines).
+	patching file kernel/sched/sched.h
+	Hunk #1 FAILED at 1362.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/sched/sched.h.rej
+
+331 S sched-swait-include-wait.h.patch
+
+	patching file include/linux/swait.h
+
+332 I sched-tracing-Fix-trace_sched_pi_setprio-for-deboost.patch
+
+	patching file include/trace/events/sched.h
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	1 out of 1 hunk ignored -- saving rejects to file include/trace/events/sched.h.rej
+
+333 S sched-ttwu-ensure-success-return-is-correct.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 2091 (offset 57 lines).
+
+334 S sched-workqueue-Only-wake-up-idle-workers-if-not-blo.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 3608 (offset 144 lines).
+
+335 S scsi-fcoe-rt-aware.patch
+
+	patching file drivers/scsi/fcoe/fcoe.c
+	patching file drivers/scsi/fcoe/fcoe_ctlr.c
+	patching file drivers/scsi/libfc/fc_exch.c
+
+336 S SCSI-libsas-remove-irq-save-in-sas_ata_qc_issue.patch
+
+	patching file drivers/scsi/libsas/sas_ata.c
+
+337 S SCSI-qla2xxx-remove-irq-save-in-qla2x00_poll.patch
+
+	patching file drivers/scsi/qla2xxx/qla_inline.h
+	Hunk #1 succeeded at 58 (offset 1 line).
+
+338 F seqlock-prevent-rt-starvation.patch
+
+	patching file include/linux/seqlock.h
+	Hunk #3 FAILED at 478.
+	Hunk #4 succeeded at 525 (offset 9 lines).
+	Hunk #5 succeeded at 535 (offset 9 lines).
+	1 out of 5 hunks FAILED -- saving rejects to file include/linux/seqlock.h.rej
+	patching file include/net/neighbour.h
+
+339 S seqlock-provide-the-same-ordering-semantics-as-mainl.patch
+
+	patching file include/linux/seqlock.h
+
+340 S signal-revert-ptrace-preempt-magic.patch
+
+	patching file kernel/signal.c
+	Hunk #1 succeeded at 2044 (offset 36 lines).
+
+341 S signals-allow-rt-tasks-to-cache-one-sigqueue-struct.patch
+
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 882 (offset 62 lines).
+	patching file include/linux/signal.h
+	patching file kernel/exit.c
+	patching file kernel/fork.c
+	Hunk #1 succeeded at 1726 (offset 1 line).
+	patching file kernel/signal.c
+
+342 S skbufhead-raw-lock.patch
+
+	patching file include/linux/netdevice.h
+	Hunk #1 succeeded at 2897 (offset 76 lines).
+	patching file include/linux/skbuff.h
+	Hunk #2 succeeded at 1665 (offset 4 lines).
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 220 (offset 1 line).
+	Hunk #2 succeeded at 4785 (offset 42 lines).
+	Hunk #3 succeeded at 4795 (offset 42 lines).
+	Hunk #4 succeeded at 5348 (offset 40 lines).
+	Hunk #5 succeeded at 5358 (offset 40 lines).
+	Hunk #6 succeeded at 5801 (offset 41 lines).
+	Hunk #7 succeeded at 8776 (offset 67 lines).
+	Hunk #8 succeeded at 9084 (offset 67 lines).
+
+343 S slub-disable-SLUB_CPU_PARTIAL.patch
+
+	patching file init/Kconfig
+	Hunk #1 succeeded at 1607 (offset -1 lines).
+
+344 S slub-enable-irqs-for-no-wait.patch
+
+	patching file mm/slub.c
+	Hunk #1 succeeded at 1587 (offset 16 lines).
+	Hunk #2 succeeded at 1656 (offset 16 lines).
+
+345 S softirq-disable-softirq-stacks-for-rt.patch
+
+	patching file arch/powerpc/kernel/irq.c
+	patching file arch/powerpc/kernel/misc_32.S
+	patching file arch/powerpc/kernel/misc_64.S
+	patching file arch/sh/kernel/irq.c
+	patching file arch/sparc/kernel/irq_64.c
+	Hunk #1 succeeded at 854 (offset -1 lines).
+	Hunk #2 succeeded at 869 (offset -1 lines).
+	patching file arch/x86/entry/entry_64.S
+	Hunk #1 succeeded at 1038 (offset 6 lines).
+	Hunk #2 succeeded at 1049 (offset 6 lines).
+	patching file arch/x86/kernel/irq_32.c
+	patching file include/linux/interrupt.h
+
+346 S softirq-preempt-fix-3-re.patch
+
+	patching file block/blk-softirq.c
+	patching file include/linux/preempt.h
+	Hunk #1 succeeded at 207 (offset 20 lines).
+	Hunk #2 succeeded at 319 (offset 42 lines).
+	patching file lib/irq_poll.c
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 2510 (offset 33 lines).
+	Hunk #2 succeeded at 2573 (offset 33 lines).
+	Hunk #3 succeeded at 3980 (offset 42 lines).
+	Hunk #4 succeeded at 5316 (offset 46 lines).
+	Hunk #5 succeeded at 5403 (offset 48 lines).
+	Hunk #6 succeeded at 8765 (offset 85 lines).
+
+347 S softirq-split-locks.patch
+
+	patching file include/linux/bottom_half.h
+	patching file include/linux/interrupt.h
+	Hunk #3 succeeded at 528 (offset 8 lines).
+	Hunk #4 succeeded at 641 (offset 3 lines).
+	patching file include/linux/preempt.h
+	patching file include/linux/sched.h
+	Hunk #1 succeeded at 1188 (offset 92 lines).
+	Hunk #2 succeeded at 1410 (offset 95 lines).
+	patching file init/main.c
+	Hunk #1 succeeded at 561 (offset 16 lines).
+	patching file kernel/softirq.c
+	Hunk #1 succeeded at 25 (offset -1 lines).
+	Hunk #2 succeeded at 63 (offset -1 lines).
+	Hunk #3 succeeded at 170 (offset -1 lines).
+	Hunk #4 succeeded at 201 (offset -1 lines).
+	Hunk #5 succeeded at 399 (offset -1 lines).
+	Hunk #6 succeeded at 419 (offset -1 lines).
+	Hunk #7 succeeded at 456 (offset -1 lines).
+	Hunk #8 succeeded at 706 (offset -1 lines).
+	Hunk #9 succeeded at 716 (offset -1 lines).
+	Hunk #10 succeeded at 742 (offset -1 lines).
+	Hunk #11 succeeded at 812 with fuzz 1 (offset 20 lines).
+	Hunk #12 succeeded at 821 (offset 20 lines).
+	Hunk #13 succeeded at 1009 (offset -82 lines).
+	Hunk #14 succeeded at 1076 (offset -82 lines).
+	patching file kernel/time/tick-sched.c
+	Hunk #1 succeeded at 887 (offset -1 lines).
+
+348 S softirq-split-timer-softirqs-out-of-ksoftirqd.patch
+
+	patching file kernel/softirq.c
+	Hunk #1 succeeded at 57 (offset -1 lines).
+	Hunk #2 succeeded at 174 (offset -1 lines).
+	Hunk #3 succeeded at 499 (offset -1 lines).
+	Hunk #4 succeeded at 634 (offset -12 lines).
+	Hunk #5 succeeded at 648 (offset -12 lines).
+	Hunk #6 succeeded at 696 (offset -12 lines).
+	Hunk #7 succeeded at 709 (offset -12 lines).
+	Hunk #8 succeeded at 794 (offset -12 lines).
+	Hunk #9 succeeded at 1126 (offset -93 lines).
+
+349 S softirq-wake-the-timer-softirq-if-needed.patch
+
+	patching file kernel/softirq.c
+	Hunk #1 succeeded at 27 (offset -1 lines).
+	Hunk #2 succeeded at 206 (offset -1 lines).
+	Hunk #3 succeeded at 218 (offset -1 lines).
+	Hunk #4 succeeded at 763 (offset -12 lines).
+	Hunk #5 succeeded at 787 (offset -12 lines).
+
+350 S spinlock-types-separate-raw.patch
+
+	patching file include/linux/rwlock_types.h
+	patching file include/linux/spinlock_types.h
+	patching file include/linux/spinlock_types_nort.h
+	patching file include/linux/spinlock_types_raw.h
+
+351 S squashfs-make-use-of-local-lock-in-multi_cpu-decompr.patch
+
+	patching file fs/squashfs/decompressor_multi_percpu.c
+
+352 F srcu-replace-local_irqsave-with-a-locallock.patch
+
+	patching file kernel/rcu/srcutree.c
+	Hunk #1 FAILED at 37.
+	Hunk #2 succeeded at 762 (offset 13 lines).
+	Hunk #3 succeeded at 772 (offset 13 lines).
+	Hunk #4 succeeded at 856 (offset 13 lines).
+	Hunk #5 succeeded at 872 (offset 13 lines).
+	1 out of 5 hunks FAILED -- saving rejects to file kernel/rcu/srcutree.c.rej
+
+353 S srcu-use-cpu_online-instead-custom-check.patch
+
+	patching file kernel/rcu/srcutree.c
+	patching file kernel/rcu/tree.c
+	Hunk #1 succeeded at 3830 (offset 55 lines).
+	Hunk #2 succeeded at 3857 (offset 55 lines).
+
+354 S stop-machine-raw-lock.patch
+
+	patching file kernel/stop_machine.c
+
+355 F sunrpc-make-svc_xprt_do_enqueue-use-get_cpu_light.patch
+
+	patching file net/sunrpc/svc_xprt.c
+	Hunk #1 succeeded at 393 with fuzz 2 (offset -2 lines).
+	Hunk #2 FAILED at 419.
+	1 out of 2 hunks FAILED -- saving rejects to file net/sunrpc/svc_xprt.c.rej
+
+356 S sysfs-realtime-entry.patch
+
+	patching file kernel/ksysfs.c
+
+357 I take-write_seqcount_invalidate-into-__d_drop.patch
+
+	patching file fs/dcache.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	2 out of 2 hunks ignored -- saving rejects to file fs/dcache.c.rej
+
+358 F tasklet-rt-prevent-tasklets-from-going-into-infinite-spin-in-rt.patch
+
+	patching file include/linux/interrupt.h
+	Hunk #1 succeeded at 550 (offset 13 lines).
+	Hunk #2 succeeded at 577 (offset 13 lines).
+	Hunk #3 succeeded at 640 (offset 13 lines).
+	patching file kernel/softirq.c
+	Hunk #2 FAILED at 467.
+	Hunk #3 FAILED at 485.
+	Hunk #4 FAILED at 539.
+	Hunk #5 succeeded at 982 (offset 399 lines).
+	Hunk #6 succeeded at 1056 with fuzz 1 (offset 399 lines).
+	3 out of 6 hunks FAILED -- saving rejects to file kernel/softirq.c.rej
+
+359 S thermal-Defer-thermal-wakups-to-threads.patch
+
+	patching file drivers/thermal/x86_pkg_temp_thermal.c
+
+360 S time-hrtimer-avoid-schedule_work-with-interrupts-dis.patch
+
+	patching file kernel/time/timer.c
+	Hunk #1 succeeded at 213 (offset -4 lines).
+	Hunk #2 succeeded at 231 (offset -4 lines).
+	Hunk #3 succeeded at 241 (offset -4 lines).
+
+361 S timekeeping-split-jiffies-lock.patch
+
+	patching file kernel/time/jiffies.c
+	patching file kernel/time/tick-common.c
+	patching file kernel/time/tick-sched.c
+	Hunk #4 succeeded at 658 with fuzz 2 (offset -12 lines).
+	patching file kernel/time/timekeeping.c
+	Hunk #1 succeeded at 2367 (offset -54 lines).
+	patching file kernel/time/timekeeping.h
+
+362 F timer-delay-waking-softirqs-from-the-jiffy-tick.patch
+
+	patching file kernel/time/timer.c
+	Hunk #1 FAILED at 1666.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/time/timer.c.rej
+
+363 S timer-fd-avoid-live-lock.patch
+
+	patching file fs/timerfd.c
+
+364 S timers-prepare-for-full-preemption.patch
+
+	patching file include/linux/timer.h
+	Hunk #1 succeeded at 172 (offset -2 lines).
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 562 (offset 36 lines).
+	Hunk #2 succeeded at 588 (offset 36 lines).
+	patching file kernel/time/timer.c
+	Hunk #3 succeeded at 1189 (offset 7 lines).
+	Hunk #4 succeeded at 1271 (offset 7 lines).
+	Hunk #5 succeeded at 1331 (offset 7 lines).
+	Hunk #6 succeeded at 1392 (offset 7 lines).
+	Hunk #7 succeeded at 1706 (offset 7 lines).
+	Hunk #8 succeeded at 1968 (offset 10 lines).
+
+365 S tpm_tis-fix-stall-after-iowrite-s.patch
+
+	patching file drivers/char/tpm/tpm_tis.c
+
+366 I tracing-Fix-display-of-hist-trigger-expressions-cont.patch
+
+	patching file kernel/trace/trace_events_hist.c
+	Reversed (or previously applied) patch detected!  Assume -R? [n] 
+	Apply anyway? [n] 
+	Skipping patch.
+	3 out of 3 hunks ignored -- saving rejects to file kernel/trace/trace_events_hist.c.rej
+
+367 S tty-serial-8250-don-t-take-the-trylock-during-oops.patch
+
+	patching file drivers/tty/serial/8250/8250_port.c
+	Hunk #1 succeeded at 3219 (offset 1 line).
+
+368 S upstream-net-rt-remove-preemption-disabling-in-netif_rx.patch
+
+	patching file net/core/dev.c
+	Hunk #1 succeeded at 4180 (offset 33 lines).
+	Hunk #2 succeeded at 4190 (offset 33 lines).
+
+369 S usb-do-not-disable-interrupts-in-giveback.patch
+
+	patching file drivers/usb/core/hcd.c
+	Hunk #1 succeeded at 1737 (offset 1 line).
+	Hunk #2 succeeded at 1764 (offset 1 line).
+
+370 S wait.h-include-atomic.h.patch
+
+	patching file include/linux/wait.h
+
+371 S workqueue-distangle-from-rq-lock.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 1762 (offset 35 lines).
+	Hunk #2 succeeded at 2202 (offset 35 lines).
+	Hunk #3 succeeded at 3554 (offset 122 lines).
+	Hunk #4 succeeded at 3614 (offset 108 lines).
+	Hunk #5 succeeded at 3630 (offset 108 lines).
+	Hunk #6 succeeded at 3646 (offset 108 lines).
+	patching file kernel/workqueue.c
+	Hunk #1 succeeded at 839 (offset -6 lines).
+	Hunk #2 succeeded at 873 (offset -6 lines).
+	Hunk #3 succeeded at 895 (offset -6 lines).
+	patching file kernel/workqueue_internal.h
+
+372 S workqueue-prevent-deadlock-stall.patch
+
+	patching file kernel/sched/core.c
+	Hunk #1 succeeded at 3612 (offset 62 lines).
+	Hunk #2 succeeded at 3621 (offset 62 lines).
+	patching file kernel/workqueue.c
+	Hunk #1 succeeded at 123 (offset -2 lines).
+	Hunk #2 succeeded at 431 (offset -6 lines).
+	Hunk #3 succeeded at 862 (offset -6 lines).
+	Hunk #4 succeeded at 900 (offset -6 lines).
+	Hunk #5 succeeded at 917 (offset -6 lines).
+	Hunk #6 succeeded at 1683 (offset 13 lines).
+	Hunk #7 succeeded at 1718 (offset 13 lines).
+	Hunk #8 succeeded at 1886 (offset 13 lines).
+
+373 F workqueue-use-locallock.patch
+
+	patching file kernel/workqueue.c
+	Hunk #2 succeeded at 356 (offset 3 lines).
+	Hunk #3 succeeded at 1128 with fuzz 1 (offset 20 lines).
+	Hunk #4 succeeded at 1236 (offset 20 lines).
+	Hunk #5 FAILED at 1280.
+	Hunk #6 succeeded at 1402 (offset 17 lines).
+	Hunk #7 succeeded at 1513 (offset 16 lines).
+	Hunk #8 succeeded at 1529 (offset 16 lines).
+	Hunk #9 succeeded at 1588 (offset 16 lines).
+	Hunk #10 succeeded at 1630 (offset 16 lines).
+	Hunk #11 succeeded at 3006 (offset 55 lines).
+	Hunk #12 succeeded at 3067 (offset 55 lines).
+	Hunk #13 succeeded at 3108 (offset 75 lines).
+	1 out of 13 hunks FAILED -- saving rejects to file kernel/workqueue.c.rej
+
+374 S workqueue-use-rcu.patch
+
+	patching file kernel/workqueue.c
+	Hunk #1 succeeded at 133 (offset 6 lines).
+	Hunk #2 succeeded at 142 (offset 6 lines).
+	Hunk #3 succeeded at 190 (offset 4 lines).
+	Hunk #4 succeeded at 219 (offset 4 lines).
+	Hunk #5 succeeded at 365 (offset 6 lines).
+	Hunk #6 succeeded at 390 (offset 6 lines).
+	Hunk #7 succeeded at 422 (offset 6 lines).
+	Hunk #8 succeeded at 583 (offset 31 lines).
+	Hunk #9 succeeded at 727 (offset 31 lines).
+	Hunk #10 succeeded at 1125 with fuzz 1 (offset 23 lines).
+	Hunk #11 succeeded at 1255 (offset 25 lines).
+	Hunk #12 succeeded at 1294 (offset 25 lines).
+	Hunk #13 succeeded at 1419 (offset 31 lines).
+	Hunk #14 succeeded at 1476 (offset 31 lines).
+	Hunk #15 succeeded at 1495 (offset 31 lines).
+	Hunk #16 succeeded at 2882 (offset 74 lines).
+	Hunk #17 succeeded at 2920 (offset 74 lines).
+	Hunk #18 succeeded at 3359 (offset 94 lines).
+	Hunk #19 succeeded at 3413 (offset 94 lines).
+	Hunk #20 succeeded at 3521 (offset 94 lines).
+	Hunk #21 succeeded at 4214 (offset 94 lines).
+	Hunk #22 succeeded at 4324 (offset 94 lines).
+	Hunk #23 succeeded at 4336 (offset 94 lines).
+	Hunk #24 succeeded at 4363 (offset 94 lines).
+	Hunk #25 succeeded at 4560 (offset 94 lines).
+	Hunk #26 succeeded at 4625 (offset 94 lines).
+	Hunk #27 succeeded at 4973 (offset 94 lines).
+	Hunk #28 succeeded at 5177 (offset 94 lines).
+	Hunk #29 succeeded at 5186 (offset 94 lines).
+
+375 S work-queue-work-around-irqsafe-timer-optimization.patch
+
+	patching file kernel/workqueue.c
+	Hunk #2 succeeded at 1304 with fuzz 1 (offset 20 lines).
+
+376 F work-simple-Simple-work-queue-implemenation.patch
+
+	patching file include/linux/swork.h
+	patching file kernel/sched/Makefile
+	Hunk #1 FAILED at 18.
+	1 out of 1 hunk FAILED -- saving rejects to file kernel/sched/Makefile.rej
+	patching file kernel/sched/swork.c
+
+377 S x86-crypto-reduce-preempt-disabled-regions.patch
+
+	patching file arch/x86/crypto/aesni-intel_glue.c
+	Hunk #1 succeeded at 434 (offset 47 lines).
+	Hunk #2 succeeded at 456 (offset 47 lines).
+	Hunk #3 succeeded at 478 (offset 47 lines).
+	Hunk #4 succeeded at 500 (offset 47 lines).
+	Hunk #5 succeeded at 557 (offset 47 lines).
+
+378 S x86-highmem-add-a-already-used-pte-check.patch
+
+	patching file arch/x86/mm/iomap_32.c
+	Hunk #1 succeeded at 69 (offset 3 lines).
+
+379 S x86-io-apic-migra-no-unmask.patch
+
+	patching file arch/x86/kernel/apic/io_apic.c
+	Hunk #1 succeeded at 1724 (offset -8 lines).
+
+380 S x86-kvm-require-const-tsc-for-rt.patch
+
+	patching file arch/x86/kvm/x86.c
+	Hunk #1 succeeded at 6533 (offset 147 lines).
+
+381 S x86-preempt-lazy.patch
+
+	patching file arch/x86/Kconfig
+	Hunk #1 succeeded at 176 (offset 2 lines).
+	patching file arch/x86/entry/common.c
+	patching file arch/x86/entry/entry_32.S
+	patching file arch/x86/entry/entry_64.S
+	Hunk #1 succeeded at 704 (offset 6 lines).
+	patching file arch/x86/include/asm/preempt.h
+	patching file arch/x86/include/asm/thread_info.h
+	patching file arch/x86/kernel/asm-offsets.c
+
+382 S x86-signal-delay-calling-signals-on-32bit.patch
+
+	patching file arch/x86/include/asm/signal.h
+
+383 S x86-stackprot-no-random-on-rt.patch
+
+	patching file arch/x86/include/asm/stackprotector.h
+
+384 S x86-use-gen-rwsem-spinlocks-rt.patch
+
+	patching file arch/x86/Kconfig
+	Hunk #1 succeeded at 263 (offset 3 lines).
+
+385 S xen-9pfs-don-t-inclide-rwlock.h-directly.patch
+
+	patching file net/9p/trans_xen.c
