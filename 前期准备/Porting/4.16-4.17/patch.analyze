@@ -9,7 +9,7 @@
 008 F 0002-clocksource-drivers-Add-a-new-driver-for-the-Atmel-A.patch
 
 	patching file drivers/clocksource/Kconfig
-	Hunk #1 FAILED at 392.
+	Hunk #1 FAILED at 392.			
 	1 out of 1 hunk FAILED -- saving rejects to file drivers/clocksource/Kconfig.rej
 	patching file drivers/clocksource/Makefile
 	patching file drivers/clocksource/timer-atmel-tcb.c
@@ -35,5 +35,67 @@
 	Hunk #5 在linux-4.17中加入了mainline；
 	Hunk #6 在linux-4.17中，alloc_irq_table函数的参数有改动，这段逻辑加入了mainline，只是用的是新的alloc_irq_table函数，并对代码进行了重构；
 	Hunk #7 在linux-4.17中加入了mainline，只是局部变量名被重构了。
+
+019 F 0003-iommu-amd-Split-domain-id-out-of-amd_iommu_devtable_.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 FAILED at 81.
+	Hunk #2 FAILED at 1599.
+	2 out of 2 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej	
+
+	Hunk #1 在linux-4.17中加入了mainline；
+	Hunk #2 在linux-4.17中加入了mainline。
+
+024 F 0004-dput-consolidate-the-do-we-need-to-retain-it-into-an.patch
+
+	patching file fs/dcache.c
+	Hunk #1 succeeded at 644 with fuzz 1 (offset 18 lines).
+	Hunk #2 FAILED at 822.
+	1 out of 2 hunks FAILED -- saving rejects to file fs/dcache.c.rej
+
+	Hunk #1 在linux-4.17中加入了mainline，并对代码进行了refine。
+
+025 F 0004-iommu-amd-Split-irq_lookup_table-out-of-the-amd_iomm.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 succeeded at 83 with fuzz 2 (offset 1 line).
+	Hunk #2 FAILED at 3610.
+	Hunk #3 FAILED at 3675.
+	2 out of 3 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
