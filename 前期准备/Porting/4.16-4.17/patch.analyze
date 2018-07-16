@@ -1,0 +1,39 @@
+003 F 0001-get-rid-of-trylock-loop-in-locking-dentries-on-shrin.patch
+
+	patching file fs/dcache.c
+	Hunk #1 FAILED at 974.
+	1 out of 1 hunk FAILED -- saving rejects to file fs/dcache.c.rej
+
+	在linux-4.17中加入了mainline，并对代码进行了refine，所以不是Ingored。
+
+008 F 0002-clocksource-drivers-Add-a-new-driver-for-the-Atmel-A.patch
+
+	patching file drivers/clocksource/Kconfig
+	Hunk #1 FAILED at 392.
+	1 out of 1 hunk FAILED -- saving rejects to file drivers/clocksource/Kconfig.rej
+	patching file drivers/clocksource/Makefile
+	patching file drivers/clocksource/timer-atmel-tcb.c
+
+	linux-4.17中，patch修改的代码附近有改动，需要修改patch的前后定位代码
+
+018 F 0003-iommu-amd-Avoid-0-get_irq_table-from-atomic-co.patch
+
+	patching file drivers/iommu/amd_iommu.c
+	Hunk #1 FAILED at 3595.
+	Hunk #2 FAILED at 3682.
+	Hunk #3 FAILED at 3733.
+	Hunk #4 FAILED at 3766.
+	Hunk #5 FAILED at 3790.
+	Hunk #6 FAILED at 4108.
+	Hunk #7 FAILED at 4391.
+	7 out of 7 hunks FAILED -- saving rejects to file drivers/iommu/amd_iommu.c.rej
+
+	Hunk #1 在linux-4.17中加入了mainline，并进行了refine；
+	Hunk #2 在linux-4.17中加入了mainline，另外因为alloc_irq_table函数的参数有改动，所以不是Ignore；
+	Hunk #3 在linux-4.17中加入了mainline；
+	Hunk #4 在linux-4.17中加入了mainline；
+	Hunk #5 在linux-4.17中加入了mainline；
+	Hunk #6 在linux-4.17中，alloc_irq_table函数的参数有改动，这段逻辑加入了mainline，只是用的是新的alloc_irq_table函数，并对代码进行了重构；
+	Hunk #7 在linux-4.17中加入了mainline，只是局部变量名被重构了。
+
+
