@@ -1,0 +1,22 @@
+#
+# Directory of the Linux kernel source to be analyzed
+#
+KERNEL_DIR=/home/chy/secProjects/lt_workspace/llvmlinux
+
+#
+# Build directory of the kernel
+# Relative to $KERNEL_DIR
+#
+BUILD_DIR=./
+
+#
+# The directory where all output should be placed
+# Relative to the working directory where callgraph.sh is invoked
+#
+WORK_DIR=result
+
+#
+# A list of paths relative to $KERNEL_DIR
+# Functions in files under these paths are skipped
+#
+SKIP_PATHS=()
