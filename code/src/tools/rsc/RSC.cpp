@@ -228,7 +228,7 @@ class RSC : public CallGraphSCCPass {
 
 		int paths = 0, subcases = 0;
 
-		std::cout << fn << std::endl;
+		std::cout << "Hello" << std::endl;
 
 		/* if (F.getName().equals(SINGLE_FN)) {
 			single_fn_mode = true;
