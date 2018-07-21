@@ -1,0 +1,61 @@
+
+编译并安装LLVM pass
+======================================================================
+
+1. 编译LLVM pass
+
+    $ cd src
+    src$ mkdir build && cd build
+
+    # for nodebug build
+    src/build$ cmake -DCMAKE_BUILD_TYPE=Release ..
+   OR
+    # for debug build
+    src/build$ cmake -DCMAKE_BUILD_TYPE=Debug ..
+
+2. 安装LLVM pass
+
+    src/build$ make install
+
+    检查project的根目录下是否生成了librsc.so
+    
+
+分析Linux Kernel的步骤
+======================================================================
+
+1. 通过复制config.template的方式，创建config文件，并设置里面的一些参数：
+
+  1.1 KERNNEL_DIR 参数
+      这个参数记录了linux kernel代码的位置
+
+  1.2 BUILD_DIR 参数
+      这个参数记录了要将编译生成的文件放在相对kernel代码目录下的那个位置。这样一来可以
+      避免污染源代码，二来方便取到bitcode文件。
+
+  1.3 设置的一个例子
+
+      KERNEL_DIR=/home/chy/secProjects/lt_workspace/llvmlinux
+      BUILD_DIR=./build   //success in deepin
+     OR
+      BUILD_DIR=build     //may success in other linux distribution
+
+2. 设置编译linux kernel的config
+  
+  2.1 例子
+
+      ~$ cd /home/chy/secProjects/rid_llvm/linux-3.17
+      linux-3.17$ rm -rf build
+      linux-3.17$ make mrproper
+      linux-3.17$ make O=./build allnoconfig //success in deepin
+     OR
+      linux-3.17$ make O=build allnoconfig //may success in other linux distribution
+
+3. 将kernel中的.c文件都变以为bitcode文件，并全部放在一个文件中，进行分析.
+    
+    $ ./analyze.sh build
+    $ ./analyze.sh run
+
+4. 注意
+
+    Note that build errors and even compiler crashes may happen when building
+    bitcodes for the kernel. Please kindly ignore them.

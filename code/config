@@ -7,7 +7,7 @@ KERNEL_DIR=/home/chy/secProjects/lt_workspace/llvmlinux
 # Build directory of the kernel
 # Relative to $KERNEL_DIR
 #
-BUILD_DIR=./
+BUILD_DIR=./build
 
 #
 # The directory where all output should be placed
