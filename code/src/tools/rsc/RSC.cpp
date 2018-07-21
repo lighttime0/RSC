@@ -412,12 +412,12 @@ public:
 	virtual bool doInitialization(CallGraph &CG) {
 		Module &M = CG.getModule();
 
-		initializeDebugInfo(M);
+		//initializeDebugInfo(M);
 
 		progress = 0;
 		total = M.size();
 
-		cache_init();
+		//cache_init();
 
 		/*std::string line;
 		std::ifstream fin(BLACKLIST);
@@ -449,7 +449,7 @@ public:
 	}
 
 	virtual bool doFinalization(CallGraph &CG) {
-		cache_finalize();
+		//cache_finalize();
 		return false;
 	}
 
