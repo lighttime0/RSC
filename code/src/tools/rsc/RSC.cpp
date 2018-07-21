@@ -22,11 +22,6 @@
 #include <llvm/Support/CommandLine.h>
 #include <llvm/Support/TimeValue.h>
 
-#include "util.h"
-#include "PathIterator.h"
-#include "Summary.h"
-#include "FormulaVisitor.h"
-
 using namespace llvm;
 //using namespace rsc;
 

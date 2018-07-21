@@ -17,5 +17,4 @@ include_directories("include/")
 
 set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC -fopenmp")
 
-add_subdirectory(lib)
 add_subdirectory(tools/rsc)
