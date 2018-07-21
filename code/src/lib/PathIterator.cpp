@@ -26,7 +26,7 @@ ForceExclude("force-exclude",
 	     cl::init(true),
 	     cl::desc("Force excluding 'safe' basic blocks"));
 
-namespace rid {
+namespace rsc {
 
 static Type *getUnderlyingType(Value *v) {
 	Type *t = v->getType();

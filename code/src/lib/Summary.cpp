@@ -15,7 +15,7 @@
 
 using namespace llvm;
 
-namespace rid {
+namespace rsc {
 
 unsigned int Operation::next_id = 0;
 

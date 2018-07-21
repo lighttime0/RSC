@@ -10,7 +10,7 @@
 
 using namespace llvm;
 
-namespace rid {
+namespace rsc {
 
 Context::~Context() {
 	for (auto op : operands)

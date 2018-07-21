@@ -20,7 +20,7 @@ I_CACHE("i-cache",
 	cl::init(""),
 	cl::desc("Deserialize function summaries from the file"));
 
-namespace rid {
+namespace rsc {
 
 static std::ifstream fin;
 static std::ofstream fout;

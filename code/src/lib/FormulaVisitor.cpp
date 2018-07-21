@@ -9,10 +9,10 @@
 
 #include "PathIterator.h"
 
-using namespace rid;
+using namespace rsc;
 using namespace llvm;
 
-namespace rid {
+namespace rsc {
 
 Formula FormulaVisitor::visit_aux(Formula F) {
 	Formula intermediate;

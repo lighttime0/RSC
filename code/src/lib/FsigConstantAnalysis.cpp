@@ -6,7 +6,7 @@
 
 using namespace llvm;
 
-namespace rid {
+namespace rsc {
 
 bool FsigConstantAnalysis::Range::is_constant() {
 	switch(sig) {

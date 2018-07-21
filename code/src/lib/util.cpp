@@ -18,7 +18,7 @@ PREFIX("prefix",
        cl::init(""),
        cl::desc("Common prefix of sources"));
 
-namespace rid {
+namespace rsc {
 
 std::string& replace_all(std::string& str, const std::string& old_value, const std::string& new_value)
 {

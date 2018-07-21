@@ -52,7 +52,7 @@ PREDEFINED("predefined",
 	   cl::init(BitVector(32)),
 	   cl::desc("Predefined summaries to be enabled (a comma-separated list)"));
 
-namespace rid {
+namespace rsc {
 
 static std::string scratch;
 static llvm::raw_string_ostream os(scratch);

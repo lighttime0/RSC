@@ -6,7 +6,7 @@
 
 using namespace llvm;
 
-namespace rid {
+namespace rsc {
 
 void FsigPointerAnalysis::copySig(llvm::Value *left, llvm::Value *right) {
 	if (!left || !right)
