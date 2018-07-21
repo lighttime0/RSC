@@ -22,6 +22,8 @@
 #include <llvm/Support/CommandLine.h>
 #include <llvm/Support/TimeValue.h>
 
+#include "util.h"
+
 using namespace llvm;
 //using namespace rsc;
 
@@ -226,7 +228,7 @@ class RSC : public CallGraphSCCPass {
 
 		int paths = 0, subcases = 0;
 
-		std::cout << F.getName() << std::endl;
+		std::cout << fn << std::endl;
 
 		/* if (F.getName().equals(SINGLE_FN)) {
 			single_fn_mode = true;
