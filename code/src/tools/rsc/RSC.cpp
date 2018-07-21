@@ -30,7 +30,7 @@
 using namespace llvm;
 //using namespace rsc;
 
-/* static cl::opt<int>
+ static cl::opt<int>
 MaxPath("max-path-per-func",
 	cl::init(100),
 	cl::desc("Maximum number of paths to be enumerated in a function"));
@@ -75,7 +75,7 @@ SENSILIST("sensilist",
 	  cl::init(""),
 	  cl::desc("A list of functions that should be analyzed"));
 
-struct PathTypeParser : public cl::parser<PathSummaryEntry::PathPrintType> {
+/* struct PathTypeParser : public cl::parser<PathSummaryEntry::PathPrintType> {
 	bool parse(cl::Option &O,
 		   StringRef ArgName, const std::string &ArgValue,
 		   PathSummaryEntry::PathPrintType &Val) {
