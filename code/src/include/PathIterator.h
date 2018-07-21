@@ -44,7 +44,7 @@ public:
 		int id;
 		struct Vertex *source, *target;
 
-		rid::Formula cond;
+		rsc::Formula cond;
 
 		llvm::BitVector dominated_edges;
 		std::map<llvm::PHINode*, llvm::BitVector> phi_values;
@@ -53,7 +53,7 @@ public:
 
 private:
 
-	rid::Context &c;
+	rsc::Context &c;
 	llvm::Function &F;
 
 	std::vector<Vertex*> vertices;
@@ -72,8 +72,8 @@ private:
 	int count_before_slicing;
 	int count_after_slicing;
 
-	path_iterator(llvm::Function &F, rid::Context &c) : F(F), c(c) {}
-	path_iterator(llvm::Function &F, rid::Context &c, bool dummy);
+	path_iterator(llvm::Function &F, rsc::Context &c) : F(F), c(c) {}
+	path_iterator(llvm::Function &F, rsc::Context &c, bool dummy);
 
 	Edge *add_edge(Vertex *from, Vertex *to);
 	void connect_edge(Edge *e1, Edge *e2);
@@ -96,8 +96,8 @@ private:
 public:
 	virtual ~path_iterator();
 
-	static path_iterator begin(llvm::Function &F, rid::Context &c);
-	static path_iterator end(llvm::Function &F, rid::Context &c);
+	static path_iterator begin(llvm::Function &F, rsc::Context &c);
+	static path_iterator end(llvm::Function &F, rsc::Context &c);
 
 	path_iterator &operator++();
 	bool operator!=(const path_iterator &x) const;
@@ -105,7 +105,7 @@ public:
 	Edge *get_edge(int id) { return edges[id]; }
 	std::list<Edge*> &get_path();
 	llvm::BasicBlock *get_entry();
-	rid::Formula path_condition();
+	rsc::Formula path_condition();
 	llvm::Value *determine_phinode(llvm::PHINode *phi);
 	llvm::Value *determine_phinode(llvm::PHINode *phi, Edge *edge);
 
@@ -118,11 +118,11 @@ public:
 	void plot_path_pair(const std::string &filename, std::list<Edge*> &p1, std::list<Edge*> &p2);
 };
 
-static path_iterator path_begin(llvm::Function &F, rid::Context &c) {
+static path_iterator path_begin(llvm::Function &F, rsc::Context &c) {
 	return path_iterator::begin(F, c);
 }
 
-static path_iterator path_end(llvm::Function &F, rid::Context &c) {
+static path_iterator path_end(llvm::Function &F, rsc::Context &c) {
 	return path_iterator::end(F, c);
 }
 

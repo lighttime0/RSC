@@ -19,7 +19,7 @@ SRC_DIR=$CURRENT_DIR/src
 source config
 export ABS_WORK_DIR=`readlink -f $WORK_DIR`
 
-if [[ ! -f $CURRENT_DIR/rid.so ]]; then
+if [[ ! -f $CURRENT_DIR/rsc.so ]]; then
     echo "Please build the Pass module first!"
     exit 1
 fi
@@ -46,7 +46,7 @@ case $CMD in
 	sed -i "/.*x86\/vdso.*/d" bclist
 	# some strange things...
 	sed -i "/.*x86\/purgatory.*/d" bclist
-	cat bclist | xargs -n 1 -I file -P 8 sh -c 'opt -load $CURRENT_DIR/rid.so -lowerswitch -weaken $1/$2/$3 -o $1/$2/$3.new && mv $1/$2/$3.new $1/$2/$3' -- $KERNEL_DIR $BUILD_DIR file
+	cat bclist | xargs -n 1 -I file -P 8 sh -c 'opt -load $CURRENT_DIR/rsc.so -lowerswitch -weaken $1/$2/$3 -o $1/$2/$3.new && mv $1/$2/$3.new $1/$2/$3' -- $KERNEL_DIR $BUILD_DIR file
 	echo -n > abs_bclist
 	cat bclist | while read f; do echo $KERNEL_DIR/$BUILD_DIR/$f >> abs_bclist; done
 	cp $SCRIPT_DIR/inline-list .
@@ -82,7 +82,7 @@ case $CMD in
 	;;
     count)
 	pushd $ABS_WORK_DIR > /dev/null
-	opt -analyze -quiet -load $CURRENT_DIR/rid.so -o-progress -count $TARGET 2> count.txt | tee count-time.txt
+	opt -analyze -quiet -load $CURRENT_DIR/rsc.so -o-progress -count $TARGET 2> count.txt | tee count-time.txt
 	popd > /dev/null
 	;;
     *)

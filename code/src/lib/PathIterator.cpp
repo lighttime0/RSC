@@ -625,7 +625,7 @@ llvm::BasicBlock *path_iterator::get_entry() {
 	return vertices.front()->bb;
 }
 
-rid::Formula path_iterator::path_condition() {
+rsc::Formula path_iterator::path_condition() {
 	Formula pc = True::get(c);
 	int i = 0;
 	for (auto e : path) {
