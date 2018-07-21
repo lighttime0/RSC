@@ -221,7 +221,7 @@ class RSC : public CallGraphSCCPass {
 
 	void run_on_function(CallGraphNode *N, Function &F) {
 		int nr_branches = 0;
-		Summary *summary = NULL;
+		//Summary *summary = NULL;
 		StringRef fn = getFunctionName(&F);
 
 		int paths = 0, subcases = 0;
