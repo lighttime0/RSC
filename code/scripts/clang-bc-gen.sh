@@ -50,4 +50,4 @@ while test $# -gt 0; do
 done
 
 srcfile=${srcfile#../}
-clang -emit-llvm -w -Wno-parentheses-equality -Wno-gcc-compat $cmdline -c -o ${srcfile%.c}.bc && opt -S -mem2reg ${srcfile%.c}.bc -o ${srcfile%.c}.bc
+clang -emit-llvm -w -Wno-parentheses-equality -Wno-gcc-compat $cmdline -c -o ${srcfile%.c}.bc
