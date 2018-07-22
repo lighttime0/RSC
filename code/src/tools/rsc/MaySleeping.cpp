@@ -34,14 +34,16 @@ public:
 	}
 
 	virtual bool runOnFunction(Function &F) {
-		for (inst_iterator i = inst_begin(F), e = inst_end(F); i != e; ) {
-			if (auto *CI = dyn_cast<CallInst>(&I)) {
-				StringRef cnt_fn = getFunctionName(CI->getCalledFunction());
-				cnt_fn_name_str = cnt_fn.str();
-				std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
-									may_sleeping_primitive.end(), cnt_fn_name_str);
-				if (it != may_sleeping_primitive.end()) {
-					std::cout << cnt_fn_name_str << std::endl;
+		for (BasicBlock &B : F) {
+			for (Instruction &I: B) {
+				if (auto *CI = dyn_cast<CallInst>(&I)) {
+					StringRef cnt_fn = getFunctionName(CI->getCalledFunction());
+					cnt_fn_name_str = cnt_fn.str();
+					std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
+										may_sleeping_primitive.end(), cnt_fn_name_str);
+					if (it != may_sleeping_primitive.end()) {
+						std::cout << cnt_fn_name_str << std::endl;
+					}
 				}
 			}
 		}
