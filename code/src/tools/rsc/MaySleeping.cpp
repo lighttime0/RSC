@@ -5,29 +5,13 @@
 
 #include <boost/regex.hpp>
 
-#include <llvm/Analysis/CallGraph.h>
-#include <llvm/Analysis/CallGraphSCCPass.h>
 #include <llvm/Constants.h>
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/Function.h>
 #include <llvm/IR/BasicBlock.h>
-#include <llvm/IR/CFG.h>
 #include <llvm/IR/Instructions.h>
 #include <llvm/IR/InstVisitor.h>
-#include <llvm/Instructions.h>
-#include <llvm/IntrinsicInst.h>
-#include <llvm/Module.h>
-#include <llvm/Pass.h>
-#include <llvm/ADT/OwningPtr.h>
-#include <llvm/Analysis/ValueTracking.h>
-#include <llvm/Support/InstIterator.h>
-#include <llvm/Support/PatternMatch.h>
-#include <llvm/Transforms/Utils/Local.h>
-#include <llvm/Support/FileSystem.h>
-#include <llvm/Support/raw_ostream.h>
-#include <llvm/Support/CommandLine.h>
-#include <llvm/Support/TimeValue.h>
 
 using namespace llvm;
 //using namespace llvm::PatternMatch;
@@ -36,23 +20,36 @@ using namespace llvm;
 
 class MaySleeping : public FunctionPass {
 
+private:
+
+	std::list<std::string> may_sleeping_primitive;
+
 public:
 	static char ID;
 	MaySleeping() : FunctionPass(ID) {}
 
 	virtual bool doInitialization(Function &F) {
 		may_sleeping_primitive.push_back("spin_lock_irqsave");
+		return false;
 	}
 
-	virtual void getAnalysisUsage(AnalysisUsage &AU) const {
-		AU.setPreservesCFG();
+	virtual bool runOnFunction(Function &F) {
+		for (inst_iterator i = inst_begin(F), e = inst_end(F); i != e; ) {
+			if (auto *CallInst = dyn_cast<CallInst>(&I)) {
+				StringRef cnt_fn = getFunctionName(CallInst->getCalledFunction());
+				cnt_fn_name_str = cnt_fn.str();
+				std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
+									may_sleeping_primitive.end(), cnt_fn_name_str)
+				if (it != may_sleeping_primitive.end()) {
+					std::cout << cnt_fn_name_str << std::endl
+				}
+			}
+		}
+		return false;
 	}
+};
 
-	virtual bool runOnFunction(Function &);
 
-private:
-
-	std::list<std::string> may_sleeping_primitive;
 
 /*	typedef IRBuilder<> BuilderTy;
 	BuilderTy *Builder;
@@ -91,23 +88,9 @@ private:
 
 } // anonymous namespace
 */
-}	
-
-bool MaySleeping::runOnFunction(Function &F) {
-
-	for (inst_iterator i = inst_begin(F), e = inst_end(F); i != e; ) {
-		if (auto *CallInst = dyn_cast<CallInst>(&I)) {
-			StringRef cnt_fn = getFunctionName(CallInst->getCalledFunction());
-			cnt_fn_name_str = cnt_fn.str();
-			std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
-								may_sleeping_primitive.end(), cnt_fn_name_str)
-			if (it != may_sleeping_primitive.end()) {
-				std::cout << cnt_fn_name_str << std::endl
-			}
-		}
-	}
 
 /*
+bool MaySleeping::runOnFunction(Function &F) {
 	BuilderTy TheBuilder(F.getContext());
 	Builder = &TheBuilder;
 	bool Changed = false;
@@ -130,8 +113,8 @@ bool MaySleeping::runOnFunction(Function &F) {
 		Changed = true;
 	}
 	return Changed;
-	*/
 }
+*/
 
 /*
 Value *MaySleeping::matchCmp(CmpInst::Predicate Pred, Value *L, Value *R) {
