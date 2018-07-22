@@ -238,10 +238,10 @@ class RSC : public CallGraphSCCPass {
 					StringRef cnt_fn = getFunctionName(CallInst->getCalledFunction());
 					std::string cnt_fn_name_str = cnt_fn.str();
 					std::list<std::string>::iterator it = find(enter_atomic_context_functions.begin(), 
-						enter_atomic_context_functions.end(), cnt_fn_name_str)
-					if (cnt_fn.str() == "targetFunc") {
+						enter_atomic_context_functions.end(), cnt_fn_name_str);
+					if (it != may_sleeping_primitive.end()) {
 						//means fn is a function that can enter atomic context
-						++callCounter;
+						//do something
 					}
 				}
 			}

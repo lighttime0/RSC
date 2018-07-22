@@ -9,7 +9,7 @@
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/Function.h>
 #include <llvm/IR/BasicBlock.h>
-#include <llvm/IR/Instructions.h>
+#include "llvm/IR/Instructions.h"
 #include "llvm/IR/InstIterator.h"
 #include "llvm/Support/Casting.h"
 
@@ -35,8 +35,8 @@ public:
 
 	virtual bool runOnFunction(Function &F) {
 		for (inst_iterator i = inst_begin(F), e = inst_end(F); i != e; ) {
-			if (auto *CallInst = dyn_cast<CallInst>(&I)) {
-				StringRef cnt_fn = getFunctionName(CallInst->getCalledFunction());
+			if (auto *CI = dyn_cast<CallInst>(&I)) {
+				StringRef cnt_fn = getFunctionName(CI->getCalledFunction());
 				cnt_fn_name_str = cnt_fn.str();
 				std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
 									may_sleeping_primitive.end(), cnt_fn_name_str);
