@@ -10,7 +10,7 @@
 #include <llvm/IR/Function.h>
 #include <llvm/IR/BasicBlock.h>
 #include <llvm/IR/Instructions.h>
-#innclude "llvm/IR/InstIterator.h"
+#include "llvm/IR/InstIterator.h"
 
 using namespace llvm;
 //using namespace llvm::PatternMatch;
