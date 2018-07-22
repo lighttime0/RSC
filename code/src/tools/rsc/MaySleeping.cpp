@@ -16,6 +16,7 @@
 #include "util.h"
 
 using namespace llvm;
+using namespace rsc;
 //using namespace llvm::PatternMatch;
 
 //namespace {
@@ -39,7 +40,7 @@ public:
 		for (BasicBlock &B : F) {
 			for (Instruction &I: B) {
 				if (auto *CI = dyn_cast<CallInst>(&I)) {
-					StringRef cnt_fn = getFunctionName(CI->getCalledFunction());
+					StringRef cnt_fn = rsc::getFunctionName(CI->getCalledFunction());
 					cnt_fn_name_str = cnt_fn.str();
 					std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
 										may_sleeping_primitive.end(), cnt_fn_name_str);
