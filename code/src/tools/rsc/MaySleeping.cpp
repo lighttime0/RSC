@@ -5,7 +5,6 @@
 
 #include <boost/regex.hpp>
 
-#include <llvm/Constants.h>
 #include <llvm/IR/Module.h>
 #include <llvm/IR/Constants.h>
 #include <llvm/IR/Function.h>
