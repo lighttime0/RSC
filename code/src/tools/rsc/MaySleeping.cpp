@@ -4,7 +4,6 @@
 #include <algorithm>
 
 #include <llvm/Constants.h>
-#include <llvm/IRBuilder.h>
 #include <llvm/Instructions.h>
 #include <llvm/IntrinsicInst.h>
 #include <llvm/Module.h>
