@@ -11,6 +11,7 @@
 #include <llvm/IR/BasicBlock.h>
 #include <llvm/IR/Instructions.h>
 #include "llvm/IR/InstIterator.h"
+#include "llvm/Support/Casting.h"
 
 using namespace llvm;
 //using namespace llvm::PatternMatch;
@@ -38,9 +39,9 @@ public:
 				StringRef cnt_fn = getFunctionName(CallInst->getCalledFunction());
 				cnt_fn_name_str = cnt_fn.str();
 				std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
-									may_sleeping_primitive.end(), cnt_fn_name_str)
+									may_sleeping_primitive.end(), cnt_fn_name_str);
 				if (it != may_sleeping_primitive.end()) {
-					std::cout << cnt_fn_name_str << std::endl
+					std::cout << cnt_fn_name_str << std::endl;
 				}
 			}
 		}
