@@ -13,6 +13,8 @@
 #include "llvm/IR/InstIterator.h"
 #include "llvm/Support/Casting.h"
 
+#include "util.h"
+
 using namespace llvm;
 //using namespace llvm::PatternMatch;
 
