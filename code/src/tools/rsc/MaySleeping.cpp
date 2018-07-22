@@ -41,7 +41,7 @@ public:
 			for (Instruction &I: B) {
 				if (auto *CI = dyn_cast<CallInst>(&I)) {
 					StringRef cnt_fn = rsc::getFunctionName(CI->getCalledFunction());
-					cnt_fn_name_str = cnt_fn.str();
+					std::string cnt_fn_name_str = cnt_fn.str();
 					std::list<std::string>::iterator it = find(may_sleeping_primitive.begin(), 
 										may_sleeping_primitive.end(), cnt_fn_name_str);
 					if (it != may_sleeping_primitive.end()) {
