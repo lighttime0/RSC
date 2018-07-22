@@ -2,8 +2,8 @@
 #include <iostream>
 #include <cstring>
 #include <string>
-
 #include <list>
+#include <algorithm>
 
 #include <boost/regex.hpp>
 
@@ -25,7 +25,7 @@
 #include "util.h"
 
 using namespace llvm;
-//using namespace rsc;
+using namespace rsc;
 
  static cl::opt<int>
 MaxPath("max-path-per-func",
@@ -105,6 +105,8 @@ class RSC : public CallGraphSCCPass {
 
 	std::list<std::string> blacklist;
 	std::list<std::string> sensilist;
+
+	std::list<std::string> enter_atomic_context_functions;
 
 	int ipp_id;
 
@@ -228,7 +230,22 @@ class RSC : public CallGraphSCCPass {
 
 		int paths = 0, subcases = 0;
 
-		std::cout << "Hello" << std::endl;
+		std::cout << fn.str() << std::endl;
+			
+		for (BasicBlock &B : F) {
+	        for (Instruction &I: B) {
+				if (auto *CallInst = dyn_cast<CallInst>(&I)) {
+					StringRef cnt_fn = getFunctionName(CallInst->getCalledFunction());
+					std::string cnt_fn_name_str = cnt_fn.str();
+					std::list<std::string>::iterator it = find(enter_atomic_context_functions.begin(), 
+						enter_atomic_context_functions.end(), cnt_fn_name_str)
+					if (cnt_fn.str() == "targetFunc") {
+						//means fn is a function that can enter atomic context
+						++callCounter;
+					}
+				}
+			}
+		}
 
 		/* if (F.getName().equals(SINGLE_FN)) {
 			single_fn_mode = true;
@@ -435,6 +452,8 @@ public:
 				sensilist.push_back(line);
 			fin.close();
 		}*/
+
+		enter_atomic_context_functions.push_back("local_irq_save");
 
 		return false;
 	}
