@@ -1,7 +1,7 @@
 #
 # Directory of the Linux kernel source to be analyzed
 #
-KERNEL_DIR=/home/chy/secProjects/lt_workspace/llvmlinux
+KERNEL_DIR=/home/chy/secProjects/rid_llvm/linux-3.17
 
 #
 # Build directory of the kernel
