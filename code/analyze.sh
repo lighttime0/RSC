@@ -46,7 +46,7 @@ case $CMD in
 	sed -i "/.*x86\/vdso.*/d" bclist
 	# some strange things...
 	sed -i "/.*x86\/purgatory.*/d" bclist
-	cat bclist | xargs -n 1 -I file -P 8 sh -c 'opt -load $CURRENT_DIR/rsc.so -lowerswitch -weaken $1/$2/$3 -o $1/$2/$3.new && mv $1/$2/$3.new $1/$2/$3' -- $KERNEL_DIR $BUILD_DIR file
+	cat bclist | xargs -n 1 -I file -P 8 sh -c 'opt -load $CURRENT_DIR/rsc.so -lowerswitch -memdep $1/$2/$3 -o $1/$2/$3.new && mv $1/$2/$3.new $1/$2/$3' -- $KERNEL_DIR $BUILD_DIR file
 	echo -n > abs_bclist
 	cat bclist | while read f; do echo $KERNEL_DIR/$BUILD_DIR/$f >> abs_bclist; done
 	cp $SCRIPT_DIR/inline-list .
