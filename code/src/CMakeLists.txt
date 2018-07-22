@@ -15,7 +15,7 @@ link_directories(${LLVM_LIBRARY_DIRS})
 
 include_directories("include/")
 
-set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC -fopenmp")
+set(CMAKE_CXX_FLAGS "-std=c++11 -fPIC -fopenmp -Wall -fno-rtti")
 
 add_subdirectory(lib)
 add_subdirectory(tools/rsc)
