@@ -3,7 +3,18 @@
 #include <list>
 #include <algorithm>
 
+#include <boost/regex.hpp>
+
+#include <llvm/Analysis/CallGraph.h>
+#include <llvm/Analysis/CallGraphSCCPass.h>
 #include <llvm/Constants.h>
+#include <llvm/IR/Module.h>
+#include <llvm/IR/Constants.h>
+#include <llvm/IR/Function.h>
+#include <llvm/IR/BasicBlock.h>
+#include <llvm/IR/CFG.h>
+#include <llvm/IR/Instructions.h>
+#include <llvm/IR/InstVisitor.h>
 #include <llvm/Instructions.h>
 #include <llvm/IntrinsicInst.h>
 #include <llvm/Module.h>
@@ -13,13 +24,17 @@
 #include <llvm/Support/InstIterator.h>
 #include <llvm/Support/PatternMatch.h>
 #include <llvm/Transforms/Utils/Local.h>
+#include <llvm/Support/FileSystem.h>
+#include <llvm/Support/raw_ostream.h>
+#include <llvm/Support/CommandLine.h>
+#include <llvm/Support/TimeValue.h>
 
 using namespace llvm;
 //using namespace llvm::PatternMatch;
 
 //namespace {
 
-class MaySleeping : FunctionPass {
+class MaySleeping : public FunctionPass {
 
 public:
 	static char ID;
